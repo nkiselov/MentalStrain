@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1968df58-3906-4d5d-b0b9-61aff5414b45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Rect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/AnswerSheetGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MentalStrain/AnswerSheetGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/Box.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MentalStrain/Box.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/META-INF/MentalStrain.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MentalStrain/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/sheet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnswerSheetGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnswerSheetGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,34 +31,18 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="c55e6991-67e3-417a-9736-a9b79b06c8a3" />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="$PROJECT_DIR$" />
-        <option value="$PROJECT_DIR$/.idea" />
-      </set>
-    </option>
-  </component>
   <component name="ProjectId" id="21HGvffF5zkZjEmgqtvDMKrsGYb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -66,6 +58,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -79,25 +72,57 @@
     </task>
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/AnswerSheetGenerator.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/AnswerSheetGenerator.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/AnswerSheetGenerator.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="WindowStateProjectService">
+    <state x="828" y="274" key="#Project_Structure" timestamp="1637690768803">
+      <screen x="0" y="25" width="2560" height="1343" />
+    </state>
+    <state x="828" y="274" key="#Project_Structure/0.25.2560.1343@0.25.2560.1343" timestamp="1637690768803" />
+    <state x="804" y="355" width="1071" height="730" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1637690727527">
+      <screen x="0" y="25" width="2560" height="1343" />
+    </state>
+    <state x="804" y="355" width="1071" height="730" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.2560.1343@0.25.2560.1343" timestamp="1637690727527" />
+    <state x="1153" y="416" key="#com.intellij.ide.util.MemberChooser" timestamp="1637698438881">
+      <screen x="0" y="25" width="2560" height="1343" />
+    </state>
+    <state x="1153" y="416" key="#com.intellij.ide.util.MemberChooser/0.25.2560.1343@0.25.2560.1343" timestamp="1637698438881" />
+    <state width="1898" height="384" key="GridCell.Tab.0.bottom" timestamp="1637706392082">
+      <screen x="0" y="25" width="2560" height="1343" />
+    </state>
+    <state width="1898" height="384" key="GridCell.Tab.0.bottom/0.25.2560.1343@0.25.2560.1343" timestamp="1637706392082" />
+    <state width="1898" height="384" key="GridCell.Tab.0.center" timestamp="1637706392082">
+      <screen x="0" y="25" width="2560" height="1343" />
+    </state>
+    <state width="1898" height="384" key="GridCell.Tab.0.center/0.25.2560.1343@0.25.2560.1343" timestamp="1637706392082" />
+    <state width="1898" height="384" key="GridCell.Tab.0.left" timestamp="1637706392082">
+      <screen x="0" y="25" width="2560" height="1343" />
+    </state>
+    <state width="1898" height="384" key="GridCell.Tab.0.left/0.25.2560.1343@0.25.2560.1343" timestamp="1637706392082" />
+    <state width="1898" height="384" key="GridCell.Tab.0.right" timestamp="1637706392082">
+      <screen x="0" y="25" width="2560" height="1343" />
+    </state>
+    <state width="1898" height="384" key="GridCell.Tab.0.right/0.25.2560.1343@0.25.2560.1343" timestamp="1637706392082" />
+    <state width="1898" height="588" key="GridCell.Tab.1.bottom" timestamp="1637705856019">
+      <screen x="0" y="25" width="2560" height="1343" />
+    </state>
+    <state width="1898" height="588" key="GridCell.Tab.1.bottom/0.25.2560.1343@0.25.2560.1343" timestamp="1637705856019" />
+    <state width="1898" height="588" key="GridCell.Tab.1.center" timestamp="1637705856019">
+      <screen x="0" y="25" width="2560" height="1343" />
+    </state>
+    <state width="1898" height="588" key="GridCell.Tab.1.center/0.25.2560.1343@0.25.2560.1343" timestamp="1637705856019" />
+    <state width="1898" height="588" key="GridCell.Tab.1.left" timestamp="1637705856019">
+      <screen x="0" y="25" width="2560" height="1343" />
+    </state>
+    <state width="1898" height="588" key="GridCell.Tab.1.left/0.25.2560.1343@0.25.2560.1343" timestamp="1637705856019" />
+    <state width="1898" height="588" key="GridCell.Tab.1.right" timestamp="1637705856019">
+      <screen x="0" y="25" width="2560" height="1343" />
+    </state>
+    <state width="1898" height="588" key="GridCell.Tab.1.right/0.25.2560.1343@0.25.2560.1343" timestamp="1637705856019" />
+    <state x="828" y="274" key="SettingsEditor" timestamp="1637690705634">
+      <screen x="0" y="25" width="2560" height="1343" />
+    </state>
+    <state x="828" y="274" key="SettingsEditor/0.25.2560.1343@0.25.2560.1343" timestamp="1637690705634" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MentalStrain$Main.ic" NAME="Main Coverage Results" MODIFIED="1637705357412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

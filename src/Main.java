@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        BufferedImage img = AnswerSheetGenerator.generateSheet("TEST",120,new char[]{'a','b'}, 1000,500,100,30);
+        BufferedImage img = AnswerSheetGenerator.generateSheet(120,new char[]{'a','b','c','d','e','f'}, 4000,2000,0,100);
         ImageIO.write(img,"png",new File("sheet.png"));
     }
 }
