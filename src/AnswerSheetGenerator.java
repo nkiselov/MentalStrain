@@ -1,12 +1,19 @@
 import java.awt.*;
+import java.awt.font.FontRenderContext;
+import java.awt.font.GlyphVector;
+import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 
 public class AnswerSheetGenerator {
     private static final double MARK_ASPECT = 2;
+    private static final double MARK_SCALE = 0.8;
+    private static final double BUBBLE_SCALE = 0.75;
     private static final double VERTICAL_SPACE = 0.5;
     private static final double HORIZONTAL_SPACE = 0.5;
+    private static final double FONT_SCALE = 0.5;
+    private static final double STROKE_SCALE = 0.05;
 
-    public static BufferedImage generateSheet(int questions, char[] choices, int height, int width, int minRows, int maxRows) {
+    public static BufferedImage generateSheet(int questions, char[] choices, int height, int width, int minRows, int maxRows, Font font, Color color) {
         double aspect = (width) / (double) height;
         int low = minRows;
         int high = Math.min(Math.max(questions + 1, low),maxRows);
@@ -41,8 +48,9 @@ public class AnswerSheetGenerator {
             whiteX = highx;
             whiteY = highy;
         }
-        whiteX *= width / (m * (choices.length + 1) + MARK_ASPECT  + whiteX);
-        whiteY *= height / (n + whiteY);
+        double scale = height / (n + whiteY);
+        whiteX *= scale;
+        whiteY *= scale;
         System.out.println(n + "," + m + "," + whiteX + "," + whiteY);
         double sectionHeight = height - whiteY;
         double sectionStartX = sectionHeight / (double) n * (MARK_ASPECT);
@@ -61,7 +69,15 @@ public class AnswerSheetGenerator {
         Graphics2D gfx = (Graphics2D) img.getGraphics();
         gfx.setColor(Color.white);
         gfx.fillRect(0, 0, width, height);
-        gfx.setColor(Color.black);
+        gfx.setColor(color);
+        gfx.setStroke(new BasicStroke((int)Math.floor(scale*STROKE_SCALE)));
+        Font f = new Font(font.getName(),font.getStyle(),(int)Math.floor(scale*FONT_SCALE));
+        gfx.setFont(f);
+        FontMetrics fm = gfx.getFontMetrics();
+        System.out.println(fm.getHeight());
+        System.out.println(fm.getDescent());
+        System.out.println(fm.getMaxAscent());
+        System.out.println(fm.getMaxDescent());
         for (Box box : markBoxes) {
             //System.out.println(box.width()/box.height());
             drawMark(gfx, box);
@@ -82,13 +98,14 @@ public class AnswerSheetGenerator {
     }
 
     private static void drawMark(Graphics2D gfx, Box box) {
-        Rect r = new Rect(box);
+        Rect r = new Rect(box.scale(MARK_SCALE));
         gfx.fillRect(r.sx, r.sy, r.ex - r.sx + 1, r.ey - r.sy + 1);
         //gfx.drawRect(box.sx,box.sy,box.ex-box.sx, box.ey-box.sy);
     }
 
     private static void drawQuestion(Graphics2D gfx, Box box, int number, char[] choices) {
-        Box num = new Box(box.sx, box.sy, box.sx+box.width()/(choices.length+1),box.ey,box.minX,box.maxX,box.minY,box.maxY);
+        Rect num = new Rect(new Box(box.sx, box.sy, box.sx+box.width()/(choices.length+1),box.ey,box.minX,box.maxX,box.minY,box.maxY));
+        drawRightString(gfx,String.valueOf(number),num);
         for (int i=0; i< choices.length; i++){
             Box bubble = new Box(box.sx + box.width()*(i+1)/(choices.length+1), box.sy, box.sx + box.width()*(i+2)/(choices.length+1),box.ey,box.minX,box.maxX,box.minY,box.maxY);
             drawBubble(gfx,bubble,choices[i]);
@@ -96,7 +113,43 @@ public class AnswerSheetGenerator {
     }
 
     private static void drawBubble(Graphics2D gfx, Box box, char symbol) {
-        Rect r = new Rect(box.scale(0.9));
-        gfx.fillRect(r.sx, r.sy, r.width() + 1, r.height() + 1);
+        Rect rect = new Rect(box.scale(BUBBLE_SCALE));
+        gfx.drawArc(rect.sx,rect.sy,rect.width(),rect.height(),0,360);
+        drawCenteredString(gfx,String.valueOf(symbol),rect);
+    }
+
+//    private static void drawCenteredString(Graphics gfx, String s, Rect rect, FontMetrics fm) {
+//        int x = (rect.width() - fm.stringWidth(s)) / 2;
+//        System.out.println(s+":"+fm.getStringBounds(s,gfx));
+//        int y = (fm.getMaxAscent() + (rect.height() - (fm.getMaxAscent()+ fm.getMaxDescent() )) / 2);
+//        gfx.drawString(s, rect.sx+x, rect.sy+y);
+//    }
+
+    private static void drawRightString(Graphics2D gfx, String text, Rect rect) {
+        FontRenderContext frc = gfx.getFontRenderContext();
+        GlyphVector gv = gfx.getFont().createGlyphVector(frc, text);
+        Rectangle r2D = gv.getPixelBounds(null, 0, 0);
+        int rWidth = (int) Math.round(r2D.getWidth());
+        int rHeight = (int) Math.round(r2D.getHeight());
+        int rX = (int) Math.round(r2D.getX());
+        int rY = (int) Math.round(r2D.getY());
+
+        int a = (rect.width()) - (rWidth) - rX;
+        int b = (rect.height() / 2) - (rHeight / 2) - rY;
+        gfx.drawString(text, rect.sx + a, rect.sy + b);
+    }
+
+    private static void drawCenteredString(Graphics2D gfx, String text, Rect rect) {
+        FontRenderContext frc = gfx.getFontRenderContext();
+        GlyphVector gv = gfx.getFont().createGlyphVector(frc, text);
+        Rectangle r2D = gv.getPixelBounds(null, 0, 0);
+        int rWidth = (int) Math.round(r2D.getWidth());
+        int rHeight = (int) Math.round(r2D.getHeight());
+        int rX = (int) Math.round(r2D.getX());
+        int rY = (int) Math.round(r2D.getY());
+
+        int a = (rect.width() / 2) - (rWidth / 2) - rX;
+        int b = (rect.height() / 2) - (rHeight / 2) - rY;
+        gfx.drawString(text, rect.sx + a, rect.sy + b);
     }
 }

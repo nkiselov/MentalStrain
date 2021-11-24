@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1968df58-3906-4d5d-b0b9-61aff5414b45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Rect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/AnswerSheetGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MentalStrain/AnswerSheetGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/Box.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MentalStrain/Box.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/META-INF/MentalStrain.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MentalStrain/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/sheet.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnswerSheetGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnswerSheetGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Box.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,9 +24,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="c55e6991-67e3-417a-9736-a9b79b06c8a3" />
-  </component>
   <component name="ProjectId" id="21HGvffF5zkZjEmgqtvDMKrsGYb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -42,7 +35,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -70,7 +63,19 @@
       <option name="presentableId" value="Default" />
       <updated>1637590831009</updated>
     </task>
+    <task id="LOCAL-00001" summary="Changed sheet generation algorithm">
+      <created>1637706730393</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1637706730393</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changed sheet generation algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed sheet generation algorithm" />
   </component>
   <component name="WindowStateProjectService">
     <state x="828" y="274" key="#Project_Structure" timestamp="1637690768803">
@@ -85,44 +90,71 @@
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
     <state x="1153" y="416" key="#com.intellij.ide.util.MemberChooser/0.25.2560.1343@0.25.2560.1343" timestamp="1637698438881" />
-    <state width="1898" height="384" key="GridCell.Tab.0.bottom" timestamp="1637706392082">
+    <state x="924" y="182" key="CommitChangelistDialog2" timestamp="1637706730164">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
-    <state width="1898" height="384" key="GridCell.Tab.0.bottom/0.25.2560.1343@0.25.2560.1343" timestamp="1637706392082" />
-    <state width="1898" height="384" key="GridCell.Tab.0.center" timestamp="1637706392082">
+    <state x="924" y="182" key="CommitChangelistDialog2/0.25.2560.1343@0.25.2560.1343" timestamp="1637706730164" />
+    <state width="1435" height="384" key="GridCell.Tab.0.bottom" timestamp="1637712866381">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
-    <state width="1898" height="384" key="GridCell.Tab.0.center/0.25.2560.1343@0.25.2560.1343" timestamp="1637706392082" />
-    <state width="1898" height="384" key="GridCell.Tab.0.left" timestamp="1637706392082">
+    <state width="1435" height="384" key="GridCell.Tab.0.bottom/0.25.2560.1343@0.25.2560.1343" timestamp="1637712866381" />
+    <state width="1898" height="384" key="GridCell.Tab.0.bottom/0.25.2560.1344@0.25.2560.1344" timestamp="1637708277430" />
+    <state width="1435" height="384" key="GridCell.Tab.0.center" timestamp="1637712866380">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
-    <state width="1898" height="384" key="GridCell.Tab.0.left/0.25.2560.1343@0.25.2560.1343" timestamp="1637706392082" />
-    <state width="1898" height="384" key="GridCell.Tab.0.right" timestamp="1637706392082">
+    <state width="1435" height="384" key="GridCell.Tab.0.center/0.25.2560.1343@0.25.2560.1343" timestamp="1637712866380" />
+    <state width="1898" height="384" key="GridCell.Tab.0.center/0.25.2560.1344@0.25.2560.1344" timestamp="1637708277430" />
+    <state width="1435" height="384" key="GridCell.Tab.0.left" timestamp="1637712866380">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
-    <state width="1898" height="384" key="GridCell.Tab.0.right/0.25.2560.1343@0.25.2560.1343" timestamp="1637706392082" />
-    <state width="1898" height="588" key="GridCell.Tab.1.bottom" timestamp="1637705856019">
+    <state width="1435" height="384" key="GridCell.Tab.0.left/0.25.2560.1343@0.25.2560.1343" timestamp="1637712866380" />
+    <state width="1898" height="384" key="GridCell.Tab.0.left/0.25.2560.1344@0.25.2560.1344" timestamp="1637708277430" />
+    <state width="1435" height="384" key="GridCell.Tab.0.right" timestamp="1637712866381">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
-    <state width="1898" height="588" key="GridCell.Tab.1.bottom/0.25.2560.1343@0.25.2560.1343" timestamp="1637705856019" />
-    <state width="1898" height="588" key="GridCell.Tab.1.center" timestamp="1637705856019">
+    <state width="1435" height="384" key="GridCell.Tab.0.right/0.25.2560.1343@0.25.2560.1343" timestamp="1637712866381" />
+    <state width="1898" height="384" key="GridCell.Tab.0.right/0.25.2560.1344@0.25.2560.1344" timestamp="1637708277430" />
+    <state width="1435" height="588" key="GridCell.Tab.1.bottom" timestamp="1637712549074">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
-    <state width="1898" height="588" key="GridCell.Tab.1.center/0.25.2560.1343@0.25.2560.1343" timestamp="1637705856019" />
-    <state width="1898" height="588" key="GridCell.Tab.1.left" timestamp="1637705856019">
+    <state width="1435" height="588" key="GridCell.Tab.1.bottom/0.25.2560.1343@0.25.2560.1343" timestamp="1637712549074" />
+    <state width="1898" height="588" key="GridCell.Tab.1.bottom/0.25.2560.1344@0.25.2560.1344" timestamp="1637708277427" />
+    <state width="1435" height="588" key="GridCell.Tab.1.center" timestamp="1637712549074">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
-    <state width="1898" height="588" key="GridCell.Tab.1.left/0.25.2560.1343@0.25.2560.1343" timestamp="1637705856019" />
-    <state width="1898" height="588" key="GridCell.Tab.1.right" timestamp="1637705856019">
+    <state width="1435" height="588" key="GridCell.Tab.1.center/0.25.2560.1343@0.25.2560.1343" timestamp="1637712549074" />
+    <state width="1898" height="588" key="GridCell.Tab.1.center/0.25.2560.1344@0.25.2560.1344" timestamp="1637708277427" />
+    <state width="1435" height="588" key="GridCell.Tab.1.left" timestamp="1637712549074">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
-    <state width="1898" height="588" key="GridCell.Tab.1.right/0.25.2560.1343@0.25.2560.1343" timestamp="1637705856019" />
-    <state x="828" y="274" key="SettingsEditor" timestamp="1637690705634">
+    <state width="1435" height="588" key="GridCell.Tab.1.left/0.25.2560.1343@0.25.2560.1343" timestamp="1637712549074" />
+    <state width="1898" height="588" key="GridCell.Tab.1.left/0.25.2560.1344@0.25.2560.1344" timestamp="1637708277427" />
+    <state width="1435" height="588" key="GridCell.Tab.1.right" timestamp="1637712549074">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
-    <state x="828" y="274" key="SettingsEditor/0.25.2560.1343@0.25.2560.1343" timestamp="1637690705634" />
+    <state width="1435" height="588" key="GridCell.Tab.1.right/0.25.2560.1343@0.25.2560.1343" timestamp="1637712549074" />
+    <state width="1898" height="588" key="GridCell.Tab.1.right/0.25.2560.1344@0.25.2560.1344" timestamp="1637708277427" />
+    <state x="828" y="274" key="SettingsEditor" timestamp="1637706875920">
+      <screen x="0" y="25" width="2560" height="1343" />
+    </state>
+    <state x="828" y="274" key="SettingsEditor/0.25.2560.1343@0.25.2560.1343" timestamp="1637706875920" />
+    <state x="940" y="429" key="Vcs.Push.Dialog.v2" timestamp="1637706881971">
+      <screen x="0" y="25" width="2560" height="1343" />
+    </state>
+    <state x="940" y="429" key="Vcs.Push.Dialog.v2/0.25.2560.1343@0.25.2560.1343" timestamp="1637706881971" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/AnswerSheetGenerator.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MentalStrain$Main.ic" NAME="Main Coverage Results" MODIFIED="1637705357412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/MentalStrain$Main.ic" NAME="Main Coverage Results" MODIFIED="1637708267874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
