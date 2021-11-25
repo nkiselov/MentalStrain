@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1968df58-3906-4d5d-b0b9-61aff5414b45" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnswerSheet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnswerSheetContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnswerSheetScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MalformedScanException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/AnswerSheetGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MentalStrain/AnswerSheetGenerator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MentalStrain/Main.class" afterDir="false" />
@@ -32,6 +37,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -70,12 +76,20 @@
       <option name="project" value="LOCAL" />
       <updated>1637706730393</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finished sheet generation algorithm">
+      <created>1637713489253</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1637713489253</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changed sheet generation algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed sheet generation algorithm" />
+    <MESSAGE value="Finished sheet generation algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished sheet generation algorithm" />
   </component>
   <component name="WindowStateProjectService">
     <state x="828" y="274" key="#Project_Structure" timestamp="1637690768803">
@@ -86,73 +100,78 @@
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
     <state x="804" y="355" width="1071" height="730" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.2560.1343@0.25.2560.1343" timestamp="1637690727527" />
-    <state x="1153" y="416" key="#com.intellij.ide.util.MemberChooser" timestamp="1637698438881">
+    <state x="1153" y="416" key="#com.intellij.ide.util.MemberChooser" timestamp="1637794126569">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
-    <state x="1153" y="416" key="#com.intellij.ide.util.MemberChooser/0.25.2560.1343@0.25.2560.1343" timestamp="1637698438881" />
-    <state x="924" y="182" key="CommitChangelistDialog2" timestamp="1637706730164">
+    <state x="1153" y="416" key="#com.intellij.ide.util.MemberChooser/0.25.2560.1343@0.25.2560.1343" timestamp="1637794126569" />
+    <state x="924" y="182" key="CommitChangelistDialog2" timestamp="1637713489097">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
-    <state x="924" y="182" key="CommitChangelistDialog2/0.25.2560.1343@0.25.2560.1343" timestamp="1637706730164" />
-    <state width="1435" height="384" key="GridCell.Tab.0.bottom" timestamp="1637712866381">
+    <state x="924" y="182" key="CommitChangelistDialog2/0.25.2560.1343@0.25.2560.1343" timestamp="1637713489097" />
+    <state width="1907" height="480" key="GridCell.Tab.0.bottom" timestamp="1637814249574">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
-    <state width="1435" height="384" key="GridCell.Tab.0.bottom/0.25.2560.1343@0.25.2560.1343" timestamp="1637712866381" />
-    <state width="1898" height="384" key="GridCell.Tab.0.bottom/0.25.2560.1344@0.25.2560.1344" timestamp="1637708277430" />
-    <state width="1435" height="384" key="GridCell.Tab.0.center" timestamp="1637712866380">
+    <state width="1907" height="480" key="GridCell.Tab.0.bottom/0.25.2560.1343@0.25.2560.1343" timestamp="1637814249574" />
+    <state width="2069" height="523" key="GridCell.Tab.0.bottom/0.25.2560.1344@0.25.2560.1344" timestamp="1637790089362" />
+    <state width="1907" height="480" key="GridCell.Tab.0.center" timestamp="1637814249574">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
-    <state width="1435" height="384" key="GridCell.Tab.0.center/0.25.2560.1343@0.25.2560.1343" timestamp="1637712866380" />
-    <state width="1898" height="384" key="GridCell.Tab.0.center/0.25.2560.1344@0.25.2560.1344" timestamp="1637708277430" />
-    <state width="1435" height="384" key="GridCell.Tab.0.left" timestamp="1637712866380">
+    <state width="1907" height="480" key="GridCell.Tab.0.center/0.25.2560.1343@0.25.2560.1343" timestamp="1637814249574" />
+    <state width="2069" height="523" key="GridCell.Tab.0.center/0.25.2560.1344@0.25.2560.1344" timestamp="1637790089361" />
+    <state width="1907" height="480" key="GridCell.Tab.0.left" timestamp="1637814249574">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
-    <state width="1435" height="384" key="GridCell.Tab.0.left/0.25.2560.1343@0.25.2560.1343" timestamp="1637712866380" />
-    <state width="1898" height="384" key="GridCell.Tab.0.left/0.25.2560.1344@0.25.2560.1344" timestamp="1637708277430" />
-    <state width="1435" height="384" key="GridCell.Tab.0.right" timestamp="1637712866381">
+    <state width="1907" height="480" key="GridCell.Tab.0.left/0.25.2560.1343@0.25.2560.1343" timestamp="1637814249574" />
+    <state width="2069" height="523" key="GridCell.Tab.0.left/0.25.2560.1344@0.25.2560.1344" timestamp="1637790089361" />
+    <state width="1907" height="480" key="GridCell.Tab.0.right" timestamp="1637814249574">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
-    <state width="1435" height="384" key="GridCell.Tab.0.right/0.25.2560.1343@0.25.2560.1343" timestamp="1637712866381" />
-    <state width="1898" height="384" key="GridCell.Tab.0.right/0.25.2560.1344@0.25.2560.1344" timestamp="1637708277430" />
-    <state width="1435" height="588" key="GridCell.Tab.1.bottom" timestamp="1637712549074">
+    <state width="1907" height="480" key="GridCell.Tab.0.right/0.25.2560.1343@0.25.2560.1343" timestamp="1637814249574" />
+    <state width="2069" height="523" key="GridCell.Tab.0.right/0.25.2560.1344@0.25.2560.1344" timestamp="1637790089362" />
+    <state width="1907" height="608" key="GridCell.Tab.1.bottom" timestamp="1637813492445">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
-    <state width="1435" height="588" key="GridCell.Tab.1.bottom/0.25.2560.1343@0.25.2560.1343" timestamp="1637712549074" />
-    <state width="1898" height="588" key="GridCell.Tab.1.bottom/0.25.2560.1344@0.25.2560.1344" timestamp="1637708277427" />
-    <state width="1435" height="588" key="GridCell.Tab.1.center" timestamp="1637712549074">
+    <state width="1907" height="608" key="GridCell.Tab.1.bottom/0.25.2560.1343@0.25.2560.1343" timestamp="1637813492445" />
+    <state width="1907" height="608" key="GridCell.Tab.1.bottom/0.25.2560.1344@0.25.2560.1344" timestamp="1637813299868" />
+    <state width="1907" height="608" key="GridCell.Tab.1.center" timestamp="1637813492445">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
-    <state width="1435" height="588" key="GridCell.Tab.1.center/0.25.2560.1343@0.25.2560.1343" timestamp="1637712549074" />
-    <state width="1898" height="588" key="GridCell.Tab.1.center/0.25.2560.1344@0.25.2560.1344" timestamp="1637708277427" />
-    <state width="1435" height="588" key="GridCell.Tab.1.left" timestamp="1637712549074">
+    <state width="1907" height="608" key="GridCell.Tab.1.center/0.25.2560.1343@0.25.2560.1343" timestamp="1637813492445" />
+    <state width="1907" height="608" key="GridCell.Tab.1.center/0.25.2560.1344@0.25.2560.1344" timestamp="1637813299868" />
+    <state width="1907" height="608" key="GridCell.Tab.1.left" timestamp="1637813492445">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
-    <state width="1435" height="588" key="GridCell.Tab.1.left/0.25.2560.1343@0.25.2560.1343" timestamp="1637712549074" />
-    <state width="1898" height="588" key="GridCell.Tab.1.left/0.25.2560.1344@0.25.2560.1344" timestamp="1637708277427" />
-    <state width="1435" height="588" key="GridCell.Tab.1.right" timestamp="1637712549074">
+    <state width="1907" height="608" key="GridCell.Tab.1.left/0.25.2560.1343@0.25.2560.1343" timestamp="1637813492445" />
+    <state width="1907" height="608" key="GridCell.Tab.1.left/0.25.2560.1344@0.25.2560.1344" timestamp="1637813299868" />
+    <state width="1907" height="608" key="GridCell.Tab.1.right" timestamp="1637813492445">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
-    <state width="1435" height="588" key="GridCell.Tab.1.right/0.25.2560.1343@0.25.2560.1343" timestamp="1637712549074" />
-    <state width="1898" height="588" key="GridCell.Tab.1.right/0.25.2560.1344@0.25.2560.1344" timestamp="1637708277427" />
+    <state width="1907" height="608" key="GridCell.Tab.1.right/0.25.2560.1343@0.25.2560.1343" timestamp="1637813492445" />
+    <state width="1907" height="608" key="GridCell.Tab.1.right/0.25.2560.1344@0.25.2560.1344" timestamp="1637813299868" />
     <state x="828" y="274" key="SettingsEditor" timestamp="1637706875920">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
     <state x="828" y="274" key="SettingsEditor/0.25.2560.1343@0.25.2560.1343" timestamp="1637706875920" />
-    <state x="940" y="429" key="Vcs.Push.Dialog.v2" timestamp="1637706881971">
+    <state x="940" y="429" key="Vcs.Push.Dialog.v2" timestamp="1637713494484">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
-    <state x="940" y="429" key="Vcs.Push.Dialog.v2/0.25.2560.1343@0.25.2560.1343" timestamp="1637706881971" />
+    <state x="940" y="429" key="Vcs.Push.Dialog.v2/0.25.2560.1343@0.25.2560.1343" timestamp="1637713494484" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/AnswerSheetGenerator.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="20" />
+          <url>file://$PROJECT_DIR$/src/AnswerSheetScanner.java</url>
+          <line>151</line>
+          <option name="timeStamp" value="59" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="points.get(0)" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MentalStrain$Main.ic" NAME="Main Coverage Results" MODIFIED="1637708267874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
