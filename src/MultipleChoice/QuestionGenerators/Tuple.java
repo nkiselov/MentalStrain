@@ -1,4 +1,4 @@
-package QuestionGenerators;
+package MultipleChoice.QuestionGenerators;
 
 import java.util.Objects;
 

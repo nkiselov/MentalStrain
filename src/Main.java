@@ -2,7 +2,7 @@ import MultipleChoice.DesignPreset;
 import MultipleChoice.QuestionArrangement;
 import MultipleChoice.QuestionPreset;
 import MultipleChoice.Test;
-import QuestionGenerators.*;
+import MultipleChoice.QuestionGenerators.*;
 import Sheet.*;
 
 import java.awt.*;

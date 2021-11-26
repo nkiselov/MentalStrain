@@ -1,8 +1,8 @@
-package QuestionGenerators;
+package MultipleChoice.QuestionGenerators;
 
 import java.util.*;
 
-public class DivisionQuestion implements QuestionGenerator{
+public class MultiplicationQuestion implements QuestionGenerator{
 
     @Override
     public Question[] generate(int[] difficulties, int wrong) {
@@ -23,12 +23,23 @@ public class DivisionQuestion implements QuestionGenerator{
                 do {
                     a = (int)(Math.random()*Math.sqrt(max));
                     b = (int)(Math.random()*max/a);
-                } while (a<=l || b<=l || a*b > max || problems.contains(new Tuple<>(a, b)));
+                    if(Math.random()>0.5){
+                        int temp = a;
+                        a = b;
+                        b = temp;
+                    }
+                } while (a<=l || b<=l || a*b > max || problems.contains(new Tuple<>(a, b)) || problems.contains(new Tuple<>(b, a)));
                 problems.add(new Tuple<>(a,b));
-                int ans = a;
-                a = a*b;
-                List<Integer> wrongs = QuestionUtils.generateBaseWrongs(ans,max/b,Math.max(l/b,1),Math.min(max/b-Math.max(l/b,1),wrong));
-                HashSet<Integer> comb = new HashSet<>(wrongs);
+                int ans = a*b;
+                HashSet<Integer> comb = new HashSet<>();
+                List<Integer> wrongs1 = QuestionUtils.generateBaseWrongs(a,max/b,Math.max(l/b,1),Math.min(max/b-Math.max(l/b,1),wrong/2+1));
+                for(Integer i:wrongs1){
+                    comb.add(i*b);
+                }
+                List<Integer> wrongs2 = QuestionUtils.generateBaseWrongs(b,max/a,Math.max(l/a,1),Math.min(max/a-Math.max(l/a,1),wrong/2+1));
+                for(Integer i:wrongs2){
+                    comb.add(i*a);
+                }
                 while(comb.size()<wrong){
                     int k = (int)(Math.random()*(max-l))+l+1;
                     if(k != ans){
@@ -36,7 +47,10 @@ public class DivisionQuestion implements QuestionGenerator{
                     }
                 }
                 List<Integer> pick = new ArrayList<>(comb);
-                questions[q] = new Question(a+" / "+b+" = ?",String.valueOf(ans),pick.toArray(new Integer[0]),difficulty,name());;
+                while(pick.size()>wrong){
+                    pick.remove((int)(Math.random()*pick.size()));
+                }
+                questions[q] = new Question(a+" * "+b+" = ?",String.valueOf(ans),pick.toArray(new Integer[0]),difficulty,name());;
                 q+=1;
             }
         }
@@ -50,6 +64,6 @@ public class DivisionQuestion implements QuestionGenerator{
 
     @Override
     public String name() {
-        return "Division";
+        return "Multiplication";
     }
 }

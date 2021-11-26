@@ -1,7 +1,7 @@
 package MultipleChoice;
 
-import QuestionGenerators.Question;
-import QuestionGenerators.QuestionGenerator;
+import MultipleChoice.QuestionGenerators.Question;
+import MultipleChoice.QuestionGenerators.QuestionGenerator;
 import Sheet.*;
 
 import javax.imageio.ImageIO;

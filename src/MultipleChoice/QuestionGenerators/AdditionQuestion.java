@@ -1,8 +1,8 @@
-package QuestionGenerators;
+package MultipleChoice.QuestionGenerators;
 
 import java.util.*;
 
-public class SubtractionQuestion implements QuestionGenerator{
+public class AdditionQuestion implements QuestionGenerator{
 
     @Override
     public Question[] generate(int[] difficulties, int wrong) {
@@ -21,13 +21,19 @@ public class SubtractionQuestion implements QuestionGenerator{
                 int a;
                 int b;
                 do {
-                    a = (int) (Math.random() * (max-1)) + 2;
-                    b = (int) (Math.random() * (a-1)) + 1;
-                } while (a<=l || b<=l || a-b<=l || problems.contains(new Tuple<>(a, b)));
+                    int ans = (int) (Math.random() * (max-1)) + 2;
+                    a = (int) (Math.random() * (ans-1)) + 1;
+                    b = ans-a;
+                    if(Math.random()>0.5){
+                        int temp = a;
+                        a = b;
+                        b = temp;
+                    }
+                } while (a<=l || b<=l || problems.contains(new Tuple<>(a, b)) || problems.contains(new Tuple<>(b, a)));
                 problems.add(new Tuple<>(a,b));
-                int ans = a-b;
+                int ans = a+b;
                 List<Integer> wrongs = QuestionUtils.generateBaseWrongs(ans,max,l,wrong);
-                questions[q] = new Question(a+" - "+b+" = ?",String.valueOf(ans),wrongs.toArray(new Integer[0]),difficulty,name());;
+                questions[q] = new Question(a+" + "+b+" = ?",String.valueOf(ans),wrongs.toArray(new Integer[0]),difficulty,name());;
                 q+=1;
             }
         }
@@ -41,6 +47,6 @@ public class SubtractionQuestion implements QuestionGenerator{
 
     @Override
     public String name() {
-        return "Subtraction";
+        return "Addition";
     }
 }

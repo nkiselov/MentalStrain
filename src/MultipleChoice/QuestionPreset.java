@@ -1,6 +1,6 @@
 package MultipleChoice;
 
-import QuestionGenerators.QuestionGenerator;
+import MultipleChoice.QuestionGenerators.QuestionGenerator;
 
 public class QuestionPreset {
     public QuestionGenerator[] generators;

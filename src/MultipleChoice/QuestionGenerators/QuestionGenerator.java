@@ -1,4 +1,4 @@
-package QuestionGenerators;
+package MultipleChoice.QuestionGenerators;
 
 public interface QuestionGenerator {
     public Question[] generate(int[] difficulties, int wrong);

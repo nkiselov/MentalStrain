@@ -1,8 +1,6 @@
-package QuestionGenerators;
+package MultipleChoice.QuestionGenerators;
 
-import java.awt.image.BufferedImage;
 import java.util.Arrays;
-import java.util.List;
 
 public class Question {
     public String text;
