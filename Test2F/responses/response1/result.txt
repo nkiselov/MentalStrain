@@ -1,0 +1,14 @@
+Addition: 0: {total=10, correct=10, wrong=0, unanswered=0, multiple=0}
+Addition: 1: {total=10, correct=10, wrong=0, unanswered=0, multiple=0}
+Addition: 2: {total=15, correct=10, wrong=1, unanswered=4, multiple=0}
+Division: 0: {total=10, correct=10, wrong=0, unanswered=0, multiple=0}
+Division: 1: {total=10, correct=1, wrong=1, unanswered=8, multiple=0}
+Division: 2: {total=5, correct=0, wrong=0, unanswered=5, multiple=0}
+Multiplication: 0: {total=10, correct=10, wrong=0, unanswered=0, multiple=0}
+Multiplication: 1: {total=10, correct=9, wrong=0, unanswered=1, multiple=0}
+Multiplication: 2: {total=5, correct=0, wrong=0, unanswered=5, multiple=0}
+Subtraction: 0: {total=10, correct=10, wrong=0, unanswered=0, multiple=0}
+Subtraction: 1: {total=10, correct=10, wrong=0, unanswered=0, multiple=0}
+Subtraction: 2: {total=15, correct=7, wrong=0, unanswered=8, multiple=0}
+Total: {total=120, correct=87, wrong=2, unanswered=31, multiple=0}
+Composite: 466
