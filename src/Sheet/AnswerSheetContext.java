@@ -1,3 +1,5 @@
+package Sheet;
+
 import java.io.*;
 import java.util.Scanner;
 
@@ -39,6 +41,6 @@ public class AnswerSheetContext {
         double whiteX = Double.parseDouble(scn.nextLine());
         double whiteY = Double.parseDouble(scn.nextLine());
         scn.close();
-        return new AnswerSheetContext(questions,choices,n,m,whiteX,whiteY);
+        return new AnswerSheetContext(questions, choices, n, m, whiteX, whiteY);
     }
 }

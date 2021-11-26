@@ -1,4 +1,6 @@
-public class MalformedScanException extends Exception{
+package Sheet;
+
+public class MalformedScanException extends Exception {
     int marksFound;
     int marksExpected;
 

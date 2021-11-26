@@ -1,8 +1,10 @@
+package Sheet;
+
 import java.awt.image.BufferedImage;
 
 public class AnswerSheet {
     protected static final double MARK_ASPECT = 2;
-    protected static final double MARK_SCALE = 0.5;
+    protected static final double MARK_SCALE = 0.4;
     protected static final double BUBBLE_SCALE = 0.75;
     protected static final double VERTICAL_SPACE = 0.5;
     protected static final double HORIZONTAL_SPACE = 0.5;

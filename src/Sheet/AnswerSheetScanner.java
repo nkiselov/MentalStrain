@@ -1,3 +1,5 @@
+package Sheet;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -21,7 +23,7 @@ public class AnswerSheetScanner {
     private static final double MIN_BUBBLE_FILL_TOLERANCE = 0.6;
     private static final int BUBBLE_LIGHTNESS_CUTOFF = 210;
 
-    public static int[] scanSheet(AnswerSheet sheet) throws MalformedScanException {
+    public static int[] scanSheet(AnswerSheet sheet, File debugDir) throws MalformedScanException {
         int w = sheet.img.getWidth();
         int h = sheet.img.getHeight();
         BufferedImage sh = new BufferedImage(w, h,
@@ -29,11 +31,11 @@ public class AnswerSheetScanner {
         Graphics2D gfx = (Graphics2D) sh.getGraphics();
         gfx.drawImage(sheet.img, 0, 0, sh.getWidth(), sh.getHeight(), null);
         gfx.dispose();
-        try {
-            ImageIO.write(sh, "png", new File("process1.png"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            ImageIO.write(sh, "png", new File("process1.png"));
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
         byte[] pixels = ((DataBufferByte) sh.getRaster().getDataBuffer()).getData();
         byte[] newPixels = new byte[pixels.length];
         boolean[][] px = new boolean[h][w];
@@ -46,15 +48,15 @@ public class AnswerSheetScanner {
                 px[i / w][i % w] = false;
             }
         }
-        BufferedImage sh2 = new BufferedImage(w, h,
-                BufferedImage.TYPE_BYTE_GRAY);
-        byte[] pixels2 = ((DataBufferByte) sh2.getRaster().getDataBuffer()).getData();
-        System.arraycopy(newPixels, 0, pixels2, 0, newPixels.length);
-        try {
-            ImageIO.write(sh2, "png", new File("process2.png"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        BufferedImage sh2 = new BufferedImage(w, h,
+//                BufferedImage.TYPE_BYTE_GRAY);
+//        byte[] pixels2 = ((DataBufferByte) sh2.getRaster().getDataBuffer()).getData();
+//        System.arraycopy(newPixels, 0, pixels2, 0, newPixels.length);
+//        try {
+//            ImageIO.write(sh2, "png", new File("process2.png"));
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
         List<List<Vector2Int>> islands = new ArrayList<>();
         for (int y = 0; y < h; y++) {
             for (int x = 0; x < w; x++) {
@@ -98,7 +100,7 @@ public class AnswerSheetScanner {
                     r.size.x = r.size.y;
                     r.size.y = temp;
                 }
-                r.rotation = mod(r.rotation,Math.PI);
+                r.rotation = mod(r.rotation, Math.PI);
                 marks.add(r);
                 Vector2 wv = new Vector2(r.size.x / 2 * Math.cos(r.rotation), r.size.x / 2 * Math.sin(r.rotation));
                 Vector2 hv = new Vector2(-r.size.y / 2 * Math.sin(r.rotation), r.size.y / 2 * Math.cos(r.rotation));
@@ -108,16 +110,16 @@ public class AnswerSheetScanner {
                     int ni = (i + 1) % 4;
                     g.drawLine((int) (r.centroid.x + wv.x * xmultipliers[i] + hv.x * ymultipliers[i]), (int) (r.centroid.y + wv.y * xmultipliers[i] + hv.y * ymultipliers[i]), (int) (r.centroid.x + wv.x * xmultipliers[ni] + hv.x * ymultipliers[ni]), (int) (r.centroid.y + wv.y * xmultipliers[ni] + hv.y * ymultipliers[ni]));
                 }
-            }else {
-                System.out.println(r + ":" + fill + ":" + aspect);
+            } else {
+                //System.out.println(r + ":" + fill + ":" + aspect);
             }
         }
-        try {
-            ImageIO.write(sheet.img, "png", new File("process3.png"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        if(marks.size() != sheet.ctx.n*2){
+//        try {
+//            ImageIO.write(sheet.img, "png", new File("process3.png"));
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+        if (marks.size() != sheet.ctx.n * 2) {
             throw new MalformedScanException(marks.size(), sheet.ctx.n);
         }
         int q = sheet.ctx.questions;
@@ -126,39 +128,39 @@ public class AnswerSheetScanner {
         int m = sheet.ctx.m;
         double whiteX = sheet.ctx.whiteX;
 
-        for(int i = 0; i< n; i++){
-            if(marks.get(2*i).centroid.x>marks.get(2*i+1).centroid.x){
-                Rectangle temp = marks.get(2*i);
-                marks.set(2*i,marks.get(2*i+1));
-                marks.set(2*i+1,temp);
+        for (int i = 0; i < n; i++) {
+            if (marks.get(2 * i).centroid.x > marks.get(2 * i + 1).centroid.x) {
+                Rectangle temp = marks.get(2 * i);
+                marks.set(2 * i, marks.get(2 * i + 1));
+                marks.set(2 * i + 1, temp);
             }
         }
-        for(int i=0; i<n; i++){
-            g.drawLine((int)(marks.get(2*i).centroid.x),(int)(marks.get(2*i).centroid.y),(int)(marks.get(2*i+1).centroid.x),(int)(marks.get(2*i+1).centroid.y));
+        for (int i = 0; i < n; i++) {
+            g.drawLine((int) (marks.get(2 * i).centroid.x), (int) (marks.get(2 * i).centroid.y), (int) (marks.get(2 * i + 1).centroid.x), (int) (marks.get(2 * i + 1).centroid.y));
         }
         g.setColor(Color.green);
         g.setStroke(new BasicStroke(4));
         int[] responses = new int[q];
-        double step = 1/(AnswerSheet.MARK_ASPECT+whiteX+(choices+1)*m);
-        for(int i=0; i<q; i++){
-            int row = i%n;
-            int column = i/n;
-            Vector2 markLeft = marks.get(2*row).centroid;
-            Vector2 markRight = marks.get(2*row+1).centroid;
-            double scale = Math.sqrt((markRight.x-markLeft.x)*(markRight.x-markLeft.x)+(markRight.y-markLeft.y)*(markRight.y-markLeft.y))/(AnswerSheet.MARK_ASPECT+whiteX+(choices+1)*m);
-            double r = scale*AnswerSheet.BUBBLE_SCALE;
-            double fract = (0.5 + AnswerSheet.MARK_ASPECT/2+whiteX/(m+1)*(column+1)+(choices+1)*column)/(AnswerSheet.MARK_ASPECT+whiteX+(choices+1)*m);
+        double step = 1 / (AnswerSheet.MARK_ASPECT + whiteX + (choices + 1) * m);
+        for (int i = 0; i < q; i++) {
+            int row = i % n;
+            int column = i / n;
+            Vector2 markLeft = marks.get(2 * row).centroid;
+            Vector2 markRight = marks.get(2 * row + 1).centroid;
+            double scale = Math.sqrt((markRight.x - markLeft.x) * (markRight.x - markLeft.x) + (markRight.y - markLeft.y) * (markRight.y - markLeft.y)) / (AnswerSheet.MARK_ASPECT + whiteX + (choices + 1) * m);
+            double r = scale * AnswerSheet.BUBBLE_SCALE;
+            double fract = (0.5 + AnswerSheet.MARK_ASPECT / 2 + whiteX / (m + 1) * (column + 1) + (choices + 1) * column) / (AnswerSheet.MARK_ASPECT + whiteX + (choices + 1) * m);
             int choice = 0;
             int chosen = 0;
-            for(int j=0; j<choices; j++){
-                fract+=step;
-                double cx = markLeft.x*(1-fract)+markRight.x*fract;
-                double cy = markLeft.y*(1-fract)+markRight.y*fract;
+            for (int j = 0; j < choices; j++) {
+                fract += step;
+                double cx = markLeft.x * (1 - fract) + markRight.x * fract;
+                double cy = markLeft.y * (1 - fract) + markRight.y * fract;
                 double fill = 0;
                 double total = 0;
-                for(int x = -(int)(r/2); x<=(int)(r/2); x++){
-                    for(int y = -(int)(r/2); y<=(int)(r/2); y++){
-                        if(x*x+y*y<=r*r){
+                for (int x = -(int) (r / 2); x <= (int) (r / 2); x++) {
+                    for (int y = -(int) (r / 2); y <= (int) (r / 2); y++) {
+                        if (x * x + y * y <= r * r) {
                             total += 1;
                             if ((pixels[x + (int) (cx) + (y + (int) cy) * w] & 0XFF) < BUBBLE_LIGHTNESS_CUTOFF) {
                                 fill++;
@@ -166,34 +168,34 @@ public class AnswerSheetScanner {
                         }
                     }
                 }
-                fill/=total;
-                if(fill>MIN_BUBBLE_FILL_TOLERANCE) {
+                fill /= total;
+                if (fill > MIN_BUBBLE_FILL_TOLERANCE) {
                     choice = j;
-                    chosen+=1;
+                    chosen += 1;
                     g.drawArc((int) (cx - r / 2), (int) (cy - r / 2), (int) (r), (int) (r), 0, 360);
-                    System.out.println(i+","+j+":"+fill);
+                    System.out.println(i + "," + j + ":" + fill);
                 }
             }
-            if(chosen == 0){
+            if (chosen == 0) {
                 responses[i] = -1;
             }
-            if(chosen == 1){
+            if (chosen == 1) {
                 responses[i] = choice;
             }
-            if(chosen > 1){
+            if (chosen > 1) {
                 responses[i] = -2;
             }
         }
         try {
-            ImageIO.write(sheet.img, "png", new File("process4.png"));
+            ImageIO.write(sheet.img, "png", new File(debugDir.getPath()+"/debug.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
         return responses;
     }
 
-    private static double mod(double x, double m){
-        return x-Math.floor(x/m)*m;
+    private static double mod(double x, double m) {
+        return x - Math.floor(x / m) * m;
     }
 
     private static class Vector2Int {

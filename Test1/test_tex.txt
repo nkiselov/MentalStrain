@@ -1,0 +1,1327 @@
+\documentclass{article}
+\usepackage{multicol}
+\usepackage[margin=1.5in]{geometry}
+\begin{document}
+\begin{multicols*}{4}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 1. 8 / 2 = ?
+\newline\indent A) 5
+\newline\indent B) 7
+\newline\indent C) 10
+\newline\indent D) 8
+\newline\indent E) 2
+\newline\indent F) 4
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 2. 4 / 2 = ?
+\newline\indent G) 3
+\newline\indent H) 9
+\newline\indent I) 4
+\newline\indent J) 2
+\newline\indent K) 8
+\newline\indent L) 10
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 3. 3 * 2 = ?
+\newline\indent A) 15
+\newline\indent B) 8
+\newline\indent C) 6
+\newline\indent D) 14
+\newline\indent E) 20
+\newline\indent F) 18
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 4. 6 / 3 = ?
+\newline\indent G) 6
+\newline\indent H) 5
+\newline\indent I) 2
+\newline\indent J) 4
+\newline\indent K) 1
+\newline\indent L) 3
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 5. 11 - 5 = ?
+\newline\indent A) 6
+\newline\indent B) 4
+\newline\indent C) 3
+\newline\indent D) 1
+\newline\indent E) 2
+\newline\indent F) 15
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 6. 10 / 5 = ?
+\newline\indent G) 5
+\newline\indent H) 6
+\newline\indent I) 3
+\newline\indent J) 2
+\newline\indent K) 1
+\newline\indent L) 4
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 7. 6 - 4 = ?
+\newline\indent A) 8
+\newline\indent B) 14
+\newline\indent C) 3
+\newline\indent D) 2
+\newline\indent E) 19
+\newline\indent F) 1
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 8. 14 - 10 = ?
+\newline\indent G) 3
+\newline\indent H) 10
+\newline\indent I) 1
+\newline\indent J) 18
+\newline\indent K) 15
+\newline\indent L) 4
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 9. 5 * 3 = ?
+\newline\indent A) 18
+\newline\indent B) 20
+\newline\indent C) 3
+\newline\indent D) 10
+\newline\indent E) 15
+\newline\indent F) 6
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 10. 9 - 6 = ?
+\newline\indent G) 3
+\newline\indent H) 15
+\newline\indent I) 19
+\newline\indent J) 6
+\newline\indent K) 10
+\newline\indent L) 9
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 11. 2 + 15 = ?
+\newline\indent A) 11
+\newline\indent B) 4
+\newline\indent C) 13
+\newline\indent D) 16
+\newline\indent E) 17
+\newline\indent F) 7
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 12. 2 + 5 = ?
+\newline\indent G) 14
+\newline\indent H) 7
+\newline\indent I) 9
+\newline\indent J) 4
+\newline\indent K) 5
+\newline\indent L) 17
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 13. 4 + 3 = ?
+\newline\indent A) 13
+\newline\indent B) 7
+\newline\indent C) 15
+\newline\indent D) 10
+\newline\indent E) 14
+\newline\indent F) 9
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 14. 12 - 10 = ?
+\newline\indent G) 3
+\newline\indent H) 4
+\newline\indent I) 16
+\newline\indent J) 20
+\newline\indent K) 10
+\newline\indent L) 2
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 15. 3 * 6 = ?
+\newline\indent A) 18
+\newline\indent B) 12
+\newline\indent C) 14
+\newline\indent D) 4
+\newline\indent E) 6
+\newline\indent F) 3
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 16. 17 + 3 = ?
+\newline\indent G) 20
+\newline\indent H) 3
+\newline\indent I) 18
+\newline\indent J) 11
+\newline\indent K) 17
+\newline\indent L) 19
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 17. 10 - 7 = ?
+\newline\indent A) 2
+\newline\indent B) 3
+\newline\indent C) 6
+\newline\indent D) 15
+\newline\indent E) 7
+\newline\indent F) 20
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 18. 6 / 2 = ?
+\newline\indent G) 9
+\newline\indent H) 3
+\newline\indent I) 2
+\newline\indent J) 10
+\newline\indent K) 1
+\newline\indent L) 6
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 19. 4 * 4 = ?
+\newline\indent A) 20
+\newline\indent B) 8
+\newline\indent C) 16
+\newline\indent D) 4
+\newline\indent E) 13
+\newline\indent F) 12
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 20. 6 - 3 = ?
+\newline\indent G) 10
+\newline\indent H) 16
+\newline\indent I) 14
+\newline\indent J) 18
+\newline\indent K) 3
+\newline\indent L) 13
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 21. 20 - 10 = ?
+\newline\indent A) 4
+\newline\indent B) 10
+\newline\indent C) 3
+\newline\indent D) 8
+\newline\indent E) 9
+\newline\indent F) 2
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 22. 9 / 3 = ?
+\newline\indent G) 2
+\newline\indent H) 4
+\newline\indent I) 5
+\newline\indent J) 1
+\newline\indent K) 6
+\newline\indent L) 3
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 23. 5 * 2 = ?
+\newline\indent A) 15
+\newline\indent B) 5
+\newline\indent C) 10
+\newline\indent D) 18
+\newline\indent E) 6
+\newline\indent F) 20
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 24. 2 * 7 = ?
+\newline\indent G) 14
+\newline\indent H) 16
+\newline\indent I) 2
+\newline\indent J) 19
+\newline\indent K) 20
+\newline\indent L) 7
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 25. 4 + 7 = ?
+\newline\indent A) 11
+\newline\indent B) 1
+\newline\indent C) 6
+\newline\indent D) 9
+\newline\indent E) 5
+\newline\indent F) 10
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 26. 15 / 5 = ?
+\newline\indent G) 2
+\newline\indent H) 3
+\newline\indent I) 14
+\newline\indent J) 4
+\newline\indent K) 1
+\newline\indent L) 11
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 27. 13 - 11 = ?
+\newline\indent A) 2
+\newline\indent B) 1
+\newline\indent C) 8
+\newline\indent D) 11
+\newline\indent E) 12
+\newline\indent F) 9
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 28. 4 * 2 = ?
+\newline\indent G) 16
+\newline\indent H) 12
+\newline\indent I) 6
+\newline\indent J) 8
+\newline\indent K) 20
+\newline\indent L) 19
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 29. 12 / 4 = ?
+\newline\indent A) 4
+\newline\indent B) 5
+\newline\indent C) 17
+\newline\indent D) 3
+\newline\indent E) 2
+\newline\indent F) 1
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 30. 3 * 3 = ?
+\newline\indent G) 12
+\newline\indent H) 18
+\newline\indent I) 19
+\newline\indent J) 6
+\newline\indent K) 15
+\newline\indent L) 9
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 31. 7 + 10 = ?
+\newline\indent A) 3
+\newline\indent B) 15
+\newline\indent C) 16
+\newline\indent D) 2
+\newline\indent E) 8
+\newline\indent F) 17
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 32. 8 / 4 = ?
+\newline\indent G) 3
+\newline\indent H) 4
+\newline\indent I) 5
+\newline\indent J) 1
+\newline\indent K) 2
+\newline\indent L) 18
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 33. 18 / 6 = ?
+\newline\indent A) 12
+\newline\indent B) 3
+\newline\indent C) 19
+\newline\indent D) 2
+\newline\indent E) 20
+\newline\indent F) 1
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 34. 3 * 4 = ?
+\newline\indent G) 12
+\newline\indent H) 20
+\newline\indent I) 18
+\newline\indent J) 4
+\newline\indent K) 15
+\newline\indent L) 3
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 35. 10 + 2 = ?
+\newline\indent A) 18
+\newline\indent B) 13
+\newline\indent C) 15
+\newline\indent D) 14
+\newline\indent E) 12
+\newline\indent F) 6
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 36. 10 + 8 = ?
+\newline\indent G) 19
+\newline\indent H) 17
+\newline\indent I) 18
+\newline\indent J) 3
+\newline\indent K) 11
+\newline\indent L) 4
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 37. 9 + 7 = ?
+\newline\indent A) 16
+\newline\indent B) 14
+\newline\indent C) 15
+\newline\indent D) 4
+\newline\indent E) 1
+\newline\indent F) 8
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 38. 6 * 2 = ?
+\newline\indent G) 4
+\newline\indent H) 6
+\newline\indent I) 12
+\newline\indent J) 18
+\newline\indent K) 2
+\newline\indent L) 10
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 39. 5 + 11 = ?
+\newline\indent A) 17
+\newline\indent B) 14
+\newline\indent C) 13
+\newline\indent D) 12
+\newline\indent E) 15
+\newline\indent F) 16
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 40. 8 - 6 = ?
+\newline\indent G) 12
+\newline\indent H) 11
+\newline\indent I) 19
+\newline\indent J) 17
+\newline\indent K) 4
+\newline\indent L) 2
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 41. 91 - 28 = ?
+\newline\indent A) 65
+\newline\indent B) 62
+\newline\indent C) 60
+\newline\indent D) 64
+\newline\indent E) 66
+\newline\indent F) 63
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 42. 19 + 54 = ?
+\newline\indent G) 97
+\newline\indent H) 76
+\newline\indent I) 75
+\newline\indent J) 73
+\newline\indent K) 94
+\newline\indent L) 86
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 43. 54 - 29 = ?
+\newline\indent A) 29
+\newline\indent B) 64
+\newline\indent C) 26
+\newline\indent D) 27
+\newline\indent E) 28
+\newline\indent F) 25
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 44. 50 / 10 = ?
+\newline\indent G) 5
+\newline\indent H) 2
+\newline\indent I) 4
+\newline\indent J) 3
+\newline\indent K) 7
+\newline\indent L) 1
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 45. 44 - 26 = ?
+\newline\indent A) 18
+\newline\indent B) 55
+\newline\indent C) 19
+\newline\indent D) 16
+\newline\indent E) 25
+\newline\indent F) 87
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 46. 88 - 19 = ?
+\newline\indent G) 72
+\newline\indent H) 70
+\newline\indent I) 95
+\newline\indent J) 67
+\newline\indent K) 69
+\newline\indent L) 73
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 47. 100 - 36 = ?
+\newline\indent A) 89
+\newline\indent B) 74
+\newline\indent C) 84
+\newline\indent D) 64
+\newline\indent E) 71
+\newline\indent F) 75
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 48. 30 + 43 = ?
+\newline\indent G) 76
+\newline\indent H) 89
+\newline\indent I) 77
+\newline\indent J) 74
+\newline\indent K) 71
+\newline\indent L) 73
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 49. 40 - 12 = ?
+\newline\indent A) 38
+\newline\indent B) 39
+\newline\indent C) 82
+\newline\indent D) 28
+\newline\indent E) 83
+\newline\indent F) 26
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 50. 85 - 25 = ?
+\newline\indent G) 60
+\newline\indent H) 57
+\newline\indent I) 54
+\newline\indent J) 58
+\newline\indent K) 56
+\newline\indent L) 59
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 51. 5 * 10 = ?
+\newline\indent A) 50
+\newline\indent B) 60
+\newline\indent C) 45
+\newline\indent D) 5
+\newline\indent E) 30
+\newline\indent F) 20
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 52. 14 + 56 = ?
+\newline\indent G) 82
+\newline\indent H) 96
+\newline\indent I) 70
+\newline\indent J) 83
+\newline\indent K) 68
+\newline\indent L) 94
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 53. 90 - 68 = ?
+\newline\indent A) 24
+\newline\indent B) 22
+\newline\indent C) 26
+\newline\indent D) 23
+\newline\indent E) 12
+\newline\indent F) 17
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 54. 9 * 5 = ?
+\newline\indent G) 10
+\newline\indent H) 27
+\newline\indent I) 40
+\newline\indent J) 25
+\newline\indent K) 81
+\newline\indent L) 45
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 55. 90 / 10 = ?
+\newline\indent A) 7
+\newline\indent B) 8
+\newline\indent C) 9
+\newline\indent D) 6
+\newline\indent E) 3
+\newline\indent F) 4
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 56. 32 / 8 = ?
+\newline\indent G) 1
+\newline\indent H) 4
+\newline\indent I) 3
+\newline\indent J) 2
+\newline\indent K) 6
+\newline\indent L) 5
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 57. 41 + 32 = ?
+\newline\indent A) 76
+\newline\indent B) 75
+\newline\indent C) 74
+\newline\indent D) 16
+\newline\indent E) 23
+\newline\indent F) 73
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 58. 24 * 4 = ?
+\newline\indent G) 100
+\newline\indent H) 48
+\newline\indent I) 88
+\newline\indent J) 96
+\newline\indent K) 92
+\newline\indent L) 24
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 59. 12 + 18 = ?
+\newline\indent A) 30
+\newline\indent B) 26
+\newline\indent C) 28
+\newline\indent D) 29
+\newline\indent E) 25
+\newline\indent F) 79
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 60. 66 / 11 = ?
+\newline\indent G) 6
+\newline\indent H) 3
+\newline\indent I) 5
+\newline\indent J) 1
+\newline\indent K) 2
+\newline\indent L) 4
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 61. 9 * 7 = ?
+\newline\indent A) 90
+\newline\indent B) 63
+\newline\indent C) 49
+\newline\indent D) 99
+\newline\indent E) 28
+\newline\indent F) 72
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 62. 53 + 38 = ?
+\newline\indent G) 98
+\newline\indent H) 94
+\newline\indent I) 97
+\newline\indent J) 99
+\newline\indent K) 92
+\newline\indent L) 91
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 63. 7 * 7 = ?
+\newline\indent A) 70
+\newline\indent B) 77
+\newline\indent C) 49
+\newline\indent D) 14
+\newline\indent E) 98
+\newline\indent F) 56
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 64. 8 * 7 = ?
+\newline\indent G) 91
+\newline\indent H) 63
+\newline\indent I) 64
+\newline\indent J) 70
+\newline\indent K) 56
+\newline\indent L) 96
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 65. 16 / 4 = ?
+\newline\indent A) 8
+\newline\indent B) 1
+\newline\indent C) 10
+\newline\indent D) 25
+\newline\indent E) 14
+\newline\indent F) 4
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 66. 16 * 6 = ?
+\newline\indent G) 16
+\newline\indent H) 64
+\newline\indent I) 90
+\newline\indent J) 42
+\newline\indent K) 96
+\newline\indent L) 78
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 67. 25 + 48 = ?
+\newline\indent A) 87
+\newline\indent B) 96
+\newline\indent C) 74
+\newline\indent D) 91
+\newline\indent E) 73
+\newline\indent F) 84
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 68. 14 * 5 = ?
+\newline\indent G) 28
+\newline\indent H) 100
+\newline\indent I) 14
+\newline\indent J) 70
+\newline\indent K) 56
+\newline\indent L) 45
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 69. 31 + 27 = ?
+\newline\indent A) 57
+\newline\indent B) 58
+\newline\indent C) 61
+\newline\indent D) 60
+\newline\indent E) 74
+\newline\indent F) 59
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 70. 65 / 13 = ?
+\newline\indent G) 2
+\newline\indent H) 5
+\newline\indent I) 3
+\newline\indent J) 4
+\newline\indent K) 1
+\newline\indent L) 6
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 71. 60 / 10 = ?
+\newline\indent A) 2
+\newline\indent B) 6
+\newline\indent C) 9
+\newline\indent D) 7
+\newline\indent E) 3
+\newline\indent F) 1
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 72. 8 * 10 = ?
+\newline\indent G) 80
+\newline\indent H) 100
+\newline\indent I) 72
+\newline\indent J) 96
+\newline\indent K) 88
+\newline\indent L) 30
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 73. 40 + 26 = ?
+\newline\indent A) 66
+\newline\indent B) 68
+\newline\indent C) 63
+\newline\indent D) 64
+\newline\indent E) 67
+\newline\indent F) 39
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 74. 49 / 7 = ?
+\newline\indent G) 6
+\newline\indent H) 7
+\newline\indent I) 3
+\newline\indent J) 1
+\newline\indent K) 5
+\newline\indent L) 4
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 75. 12 * 4 = ?
+\newline\indent A) 40
+\newline\indent B) 28
+\newline\indent C) 24
+\newline\indent D) 36
+\newline\indent E) 12
+\newline\indent F) 48
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 76. 74 - 25 = ?
+\newline\indent G) 54
+\newline\indent H) 52
+\newline\indent I) 53
+\newline\indent J) 50
+\newline\indent K) 49
+\newline\indent L) 31
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 77. 56 / 14 = ?
+\newline\indent A) 6
+\newline\indent B) 5
+\newline\indent C) 2
+\newline\indent D) 1
+\newline\indent E) 4
+\newline\indent F) 3
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 78. 63 - 26 = ?
+\newline\indent G) 37
+\newline\indent H) 90
+\newline\indent I) 38
+\newline\indent J) 34
+\newline\indent K) 60
+\newline\indent L) 75
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 79. 29 + 33 = ?
+\newline\indent A) 57
+\newline\indent B) 22
+\newline\indent C) 59
+\newline\indent D) 60
+\newline\indent E) 38
+\newline\indent F) 62
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 80. 45 / 9 = ?
+\newline\indent G) 8
+\newline\indent H) 1
+\newline\indent I) 2
+\newline\indent J) 6
+\newline\indent K) 7
+\newline\indent L) 5
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 81. 499 - 363 = ?
+\newline\indent A) 136
+\newline\indent B) 126
+\newline\indent C) 139
+\newline\indent D) 137
+\newline\indent E) 155
+\newline\indent F) 116
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 82. 102 + 155 = ?
+\newline\indent G) 257
+\newline\indent H) 259
+\newline\indent I) 247
+\newline\indent J) 287
+\newline\indent K) 260
+\newline\indent L) 258
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 83. 277 - 108 = ?
+\newline\indent A) 169
+\newline\indent B) 438
+\newline\indent C) 177
+\newline\indent D) 170
+\newline\indent E) 173
+\newline\indent F) 167
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 84. 436 - 184 = ?
+\newline\indent G) 126
+\newline\indent H) 252
+\newline\indent I) 251
+\newline\indent J) 250
+\newline\indent K) 248
+\newline\indent L) 242
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 85. 210 + 277 = ?
+\newline\indent A) 490
+\newline\indent B) 487
+\newline\indent C) 494
+\newline\indent D) 489
+\newline\indent E) 495
+\newline\indent F) 484
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 86. 100 + 136 = ?
+\newline\indent G) 236
+\newline\indent H) 238
+\newline\indent I) 241
+\newline\indent J) 256
+\newline\indent K) 239
+\newline\indent L) 245
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 87. 291 - 123 = ?
+\newline\indent A) 185
+\newline\indent B) 155
+\newline\indent C) 175
+\newline\indent D) 167
+\newline\indent E) 168
+\newline\indent F) 176
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 88. 323 - 177 = ?
+\newline\indent G) 154
+\newline\indent H) 146
+\newline\indent I) 141
+\newline\indent J) 143
+\newline\indent K) 144
+\newline\indent L) 123
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 89. 316 - 130 = ?
+\newline\indent A) 186
+\newline\indent B) 189
+\newline\indent C) 156
+\newline\indent D) 174
+\newline\indent E) 184
+\newline\indent F) 162
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 90. 481 / 37 = ?
+\newline\indent G) 7
+\newline\indent H) 11
+\newline\indent I) 13
+\newline\indent J) 9
+\newline\indent K) 12
+\newline\indent L) 10
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 91. 18 * 18 = ?
+\newline\indent A) 360
+\newline\indent B) 36
+\newline\indent C) 306
+\newline\indent D) 195
+\newline\indent E) 324
+\newline\indent F) 270
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 92. 389 - 153 = ?
+\newline\indent G) 231
+\newline\indent H) 124
+\newline\indent I) 236
+\newline\indent J) 155
+\newline\indent K) 216
+\newline\indent L) 238
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 93. 404 - 210 = ?
+\newline\indent A) 195
+\newline\indent B) 214
+\newline\indent C) 202
+\newline\indent D) 196
+\newline\indent E) 182
+\newline\indent F) 194
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 94. 286 + 106 = ?
+\newline\indent G) 387
+\newline\indent H) 383
+\newline\indent I) 389
+\newline\indent J) 98
+\newline\indent K) 207
+\newline\indent L) 392
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 95. 103 + 210 = ?
+\newline\indent A) 313
+\newline\indent B) 318
+\newline\indent C) 316
+\newline\indent D) 312
+\newline\indent E) 328
+\newline\indent F) 311
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 96. 404 - 267 = ?
+\newline\indent G) 117
+\newline\indent H) 137
+\newline\indent I) 135
+\newline\indent J) 155
+\newline\indent K) 139
+\newline\indent L) 145
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 97. 302 + 184 = ?
+\newline\indent A) 486
+\newline\indent B) 485
+\newline\indent C) 472
+\newline\indent D) 312
+\newline\indent E) 314
+\newline\indent F) 475
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 98. 378 / 27 = ?
+\newline\indent G) 18
+\newline\indent H) 14
+\newline\indent I) 17
+\newline\indent J) 3
+\newline\indent K) 8
+\newline\indent L) 15
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 99. 12 * 19 = ?
+\newline\indent A) 204
+\newline\indent B) 252
+\newline\indent C) 285
+\newline\indent D) 432
+\newline\indent E) 228
+\newline\indent F) 266
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 100. 436 - 293 = ?
+\newline\indent G) 141
+\newline\indent H) 143
+\newline\indent I) 146
+\newline\indent J) 128
+\newline\indent K) 142
+\newline\indent L) 153
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 101. 490 - 340 = ?
+\newline\indent A) 145
+\newline\indent B) 153
+\newline\indent C) 154
+\newline\indent D) 423
+\newline\indent E) 150
+\newline\indent F) 157
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 102. 16 * 28 = ?
+\newline\indent G) 392
+\newline\indent H) 448
+\newline\indent I) 420
+\newline\indent J) 160
+\newline\indent K) 364
+\newline\indent L) 496
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 103. 429 - 168 = ?
+\newline\indent A) 265
+\newline\indent B) 225
+\newline\indent C) 171
+\newline\indent D) 255
+\newline\indent E) 261
+\newline\indent F) 284
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 104. 375 / 25 = ?
+\newline\indent G) 13
+\newline\indent H) 15
+\newline\indent I) 9
+\newline\indent J) 10
+\newline\indent K) 1
+\newline\indent L) 12
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 105. 272 / 16 = ?
+\newline\indent A) 20
+\newline\indent B) 18
+\newline\indent C) 22
+\newline\indent D) 19
+\newline\indent E) 29
+\newline\indent F) 17
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 106. 273 + 112 = ?
+\newline\indent G) 395
+\newline\indent H) 386
+\newline\indent I) 385
+\newline\indent J) 388
+\newline\indent K) 381
+\newline\indent L) 382
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 107. 304 / 19 = ?
+\newline\indent A) 21
+\newline\indent B) 23
+\newline\indent C) 11
+\newline\indent D) 16
+\newline\indent E) 13
+\newline\indent F) 22
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 108. 13 * 25 = ?
+\newline\indent G) 325
+\newline\indent H) 364
+\newline\indent I) 375
+\newline\indent J) 300
+\newline\indent K) 350
+\newline\indent L) 351
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 109. 133 + 114 = ?
+\newline\indent A) 227
+\newline\indent B) 236
+\newline\indent C) 246
+\newline\indent D) 141
+\newline\indent E) 247
+\newline\indent F) 97
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 110. 368 + 102 = ?
+\newline\indent G) 472
+\newline\indent H) 473
+\newline\indent I) 490
+\newline\indent J) 470
+\newline\indent K) 466
+\newline\indent L) 483
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 111. 481 - 157 = ?
+\newline\indent A) 334
+\newline\indent B) 323
+\newline\indent C) 324
+\newline\indent D) 344
+\newline\indent E) 325
+\newline\indent F) 327
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 112. 118 + 379 = ?
+\newline\indent G) 486
+\newline\indent H) 493
+\newline\indent I) 496
+\newline\indent J) 500
+\newline\indent K) 429
+\newline\indent L) 497
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 113. 196 + 118 = ?
+\newline\indent A) 312
+\newline\indent B) 279
+\newline\indent C) 179
+\newline\indent D) 158
+\newline\indent E) 314
+\newline\indent F) 304
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 114. 216 + 119 = ?
+\newline\indent G) 321
+\newline\indent H) 325
+\newline\indent I) 335
+\newline\indent J) 269
+\newline\indent K) 250
+\newline\indent L) 253
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 115. 19 * 21 = ?
+\newline\indent A) 336
+\newline\indent B) 399
+\newline\indent C) 209
+\newline\indent D) 228
+\newline\indent E) 462
+\newline\indent F) 420
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 116. 309 + 108 = ?
+\newline\indent G) 416
+\newline\indent H) 420
+\newline\indent I) 460
+\newline\indent J) 417
+\newline\indent K) 430
+\newline\indent L) 415
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 117. 217 + 169 = ?
+\newline\indent A) 386
+\newline\indent B) 393
+\newline\indent C) 404
+\newline\indent D) 388
+\newline\indent E) 457
+\newline\indent F) 438
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 118. 276 - 132 = ?
+\newline\indent G) 143
+\newline\indent H) 114
+\newline\indent I) 140
+\newline\indent J) 125
+\newline\indent K) 113
+\newline\indent L) 144
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 119. 254 + 226 = ?
+\newline\indent A) 482
+\newline\indent B) 484
+\newline\indent C) 487
+\newline\indent D) 492
+\newline\indent E) 496
+\newline\indent F) 480
+\newline\newline\end{minipage}
+	\noindent
+\begin{minipage}{\textwidth}
+	\setlength{\parindent}{1.5em}
+\noindent 120. 491 - 187 = ?
+\newline\indent G) 294
+\newline\indent H) 334
+\newline\indent I) 306
+\newline\indent J) 314
+\newline\indent K) 304
+\newline\indent L) 307
+\newline\newline\end{minipage}
+\end{multicols*}
+\end{document}

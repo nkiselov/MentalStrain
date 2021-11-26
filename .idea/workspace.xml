@@ -1,18 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1968df58-3906-4d5d-b0b9-61aff5414b45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnswerSheet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnswerSheetContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnswerSheetScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MalformedScanException.java" afterDir="false" />
+    <list default="true" id="1968df58-3906-4d5d-b0b9-61aff5414b45" name="Default Changelist" comment="Finished test generation">
+      <change afterPath="$PROJECT_DIR$/src/DesignPreset.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionArrangement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionGenerators/AdditionQuestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionGenerators/MultiplicationQuestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionGenerators/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionGenerators/QuestionGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionGenerators/QuestionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionGenerators/Tuple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionPreset.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sheet/ChoiceSetNameGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sheet/ConstantChoiceSetGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/AnswerSheetGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MentalStrain/AnswerSheetGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/AnswerSheet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/AnswerSheetContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/AnswerSheetGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/AnswerSheetScanner$Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/AnswerSheetScanner$Vector2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/AnswerSheetScanner$Vector2Int.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/AnswerSheetScanner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/Box.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MentalStrain/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/sheet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnswerSheetGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnswerSheetGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/MalformedScanException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/Rect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnswerSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sheet/AnswerSheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnswerSheetContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sheet/AnswerSheetContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnswerSheetGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sheet/AnswerSheetGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnswerSheetScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sheet/AnswerSheetScanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sheet/Box.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MalformedScanException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sheet/MalformedScanException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sheet/Rect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +43,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -83,13 +105,22 @@
       <option name="project" value="LOCAL" />
       <updated>1637713489253</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Finished sheet scanning algorithm and added two column marks">
+      <created>1637818295051</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1637818295051</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changed sheet generation algorithm" />
     <MESSAGE value="Finished sheet generation algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished sheet generation algorithm" />
+    <MESSAGE value="Finished sheet scanning algorithm and added two column marks" />
+    <MESSAGE value="Finished test generation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished test generation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="828" y="274" key="#Project_Structure" timestamp="1637690768803">
@@ -100,76 +131,110 @@
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
     <state x="804" y="355" width="1071" height="730" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.2560.1343@0.25.2560.1343" timestamp="1637690727527" />
-    <state x="1153" y="416" key="#com.intellij.ide.util.MemberChooser" timestamp="1637794126569">
+    <state x="1153" y="417" key="#com.intellij.ide.util.MemberChooser" timestamp="1637952630481">
+      <screen x="0" y="25" width="2560" height="1345" />
+    </state>
+    <state x="1153" y="416" key="#com.intellij.ide.util.MemberChooser/0.25.2560.1343@0.25.2560.1343" timestamp="1637949577291" />
+    <state x="1153" y="417" key="#com.intellij.ide.util.MemberChooser/0.25.2560.1345@0.25.2560.1345" timestamp="1637952630481" />
+    <state x="1284" y="375" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1637948554038">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
-    <state x="1153" y="416" key="#com.intellij.ide.util.MemberChooser/0.25.2560.1343@0.25.2560.1343" timestamp="1637794126569" />
-    <state x="924" y="182" key="CommitChangelistDialog2" timestamp="1637713489097">
-      <screen x="0" y="25" width="2560" height="1343" />
+    <state x="1284" y="375" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.2560.1343@0.25.2560.1343" timestamp="1637948554038" />
+    <state x="924" y="182" key="CommitChangelistDialog2" timestamp="1637957049301">
+      <screen x="0" y="25" width="2560" height="1345" />
     </state>
-    <state x="924" y="182" key="CommitChangelistDialog2/0.25.2560.1343@0.25.2560.1343" timestamp="1637713489097" />
-    <state width="1907" height="480" key="GridCell.Tab.0.bottom" timestamp="1637814249574">
-      <screen x="0" y="25" width="2560" height="1343" />
+    <state x="924" y="182" key="CommitChangelistDialog2/0.25.2560.1343@0.25.2560.1343" timestamp="1637818294877" />
+    <state x="924" y="182" key="CommitChangelistDialog2/0.25.2560.1345@0.25.2560.1345" timestamp="1637957049301" />
+    <state width="1907" height="470" key="GridCell.Tab.0.bottom" timestamp="1637957049353">
+      <screen x="0" y="25" width="2560" height="1345" />
     </state>
-    <state width="1907" height="480" key="GridCell.Tab.0.bottom/0.25.2560.1343@0.25.2560.1343" timestamp="1637814249574" />
-    <state width="2069" height="523" key="GridCell.Tab.0.bottom/0.25.2560.1344@0.25.2560.1344" timestamp="1637790089362" />
-    <state width="1907" height="480" key="GridCell.Tab.0.center" timestamp="1637814249574">
-      <screen x="0" y="25" width="2560" height="1343" />
+    <state width="1907" height="412" key="GridCell.Tab.0.bottom/0.25.2560.1343@0.25.2560.1343" timestamp="1637954996203" />
+    <state width="1907" height="470" key="GridCell.Tab.0.bottom/0.25.2560.1344@0.25.2560.1344" timestamp="1637956753693" />
+    <state width="1907" height="470" key="GridCell.Tab.0.bottom/0.25.2560.1345@0.25.2560.1345" timestamp="1637957049353" />
+    <state width="1907" height="733" key="GridCell.Tab.0.bottom/0.25.2560.1346@0.25.2560.1346" timestamp="1637952288685" />
+    <state width="1907" height="470" key="GridCell.Tab.0.center" timestamp="1637957049353">
+      <screen x="0" y="25" width="2560" height="1345" />
     </state>
-    <state width="1907" height="480" key="GridCell.Tab.0.center/0.25.2560.1343@0.25.2560.1343" timestamp="1637814249574" />
-    <state width="2069" height="523" key="GridCell.Tab.0.center/0.25.2560.1344@0.25.2560.1344" timestamp="1637790089361" />
-    <state width="1907" height="480" key="GridCell.Tab.0.left" timestamp="1637814249574">
-      <screen x="0" y="25" width="2560" height="1343" />
+    <state width="1907" height="412" key="GridCell.Tab.0.center/0.25.2560.1343@0.25.2560.1343" timestamp="1637954996202" />
+    <state width="1907" height="470" key="GridCell.Tab.0.center/0.25.2560.1344@0.25.2560.1344" timestamp="1637956753692" />
+    <state width="1907" height="470" key="GridCell.Tab.0.center/0.25.2560.1345@0.25.2560.1345" timestamp="1637957049353" />
+    <state width="1907" height="733" key="GridCell.Tab.0.center/0.25.2560.1346@0.25.2560.1346" timestamp="1637952288685" />
+    <state width="1907" height="470" key="GridCell.Tab.0.left" timestamp="1637957049353">
+      <screen x="0" y="25" width="2560" height="1345" />
     </state>
-    <state width="1907" height="480" key="GridCell.Tab.0.left/0.25.2560.1343@0.25.2560.1343" timestamp="1637814249574" />
-    <state width="2069" height="523" key="GridCell.Tab.0.left/0.25.2560.1344@0.25.2560.1344" timestamp="1637790089361" />
-    <state width="1907" height="480" key="GridCell.Tab.0.right" timestamp="1637814249574">
-      <screen x="0" y="25" width="2560" height="1343" />
+    <state width="1907" height="412" key="GridCell.Tab.0.left/0.25.2560.1343@0.25.2560.1343" timestamp="1637954996202" />
+    <state width="1907" height="470" key="GridCell.Tab.0.left/0.25.2560.1344@0.25.2560.1344" timestamp="1637956753692" />
+    <state width="1907" height="470" key="GridCell.Tab.0.left/0.25.2560.1345@0.25.2560.1345" timestamp="1637957049353" />
+    <state width="1907" height="733" key="GridCell.Tab.0.left/0.25.2560.1346@0.25.2560.1346" timestamp="1637952288685" />
+    <state width="1907" height="470" key="GridCell.Tab.0.right" timestamp="1637957049353">
+      <screen x="0" y="25" width="2560" height="1345" />
     </state>
-    <state width="1907" height="480" key="GridCell.Tab.0.right/0.25.2560.1343@0.25.2560.1343" timestamp="1637814249574" />
-    <state width="2069" height="523" key="GridCell.Tab.0.right/0.25.2560.1344@0.25.2560.1344" timestamp="1637790089362" />
-    <state width="1907" height="608" key="GridCell.Tab.1.bottom" timestamp="1637813492445">
-      <screen x="0" y="25" width="2560" height="1343" />
+    <state width="1907" height="412" key="GridCell.Tab.0.right/0.25.2560.1343@0.25.2560.1343" timestamp="1637954996202" />
+    <state width="1907" height="470" key="GridCell.Tab.0.right/0.25.2560.1344@0.25.2560.1344" timestamp="1637956753692" />
+    <state width="1907" height="470" key="GridCell.Tab.0.right/0.25.2560.1345@0.25.2560.1345" timestamp="1637957049353" />
+    <state width="1907" height="733" key="GridCell.Tab.0.right/0.25.2560.1346@0.25.2560.1346" timestamp="1637952288685" />
+    <state width="1907" height="406" key="GridCell.Tab.1.bottom" timestamp="1637956613634">
+      <screen x="0" y="25" width="2560" height="1344" />
     </state>
-    <state width="1907" height="608" key="GridCell.Tab.1.bottom/0.25.2560.1343@0.25.2560.1343" timestamp="1637813492445" />
-    <state width="1907" height="608" key="GridCell.Tab.1.bottom/0.25.2560.1344@0.25.2560.1344" timestamp="1637813299868" />
-    <state width="1907" height="608" key="GridCell.Tab.1.center" timestamp="1637813492445">
-      <screen x="0" y="25" width="2560" height="1343" />
+    <state width="1907" height="406" key="GridCell.Tab.1.bottom/0.25.2560.1343@0.25.2560.1343" timestamp="1637954811765" />
+    <state width="1907" height="406" key="GridCell.Tab.1.bottom/0.25.2560.1344@0.25.2560.1344" timestamp="1637956613634" />
+    <state width="1907" height="406" key="GridCell.Tab.1.bottom/0.25.2560.1345@0.25.2560.1345" timestamp="1637953682845" />
+    <state width="1907" height="557" key="GridCell.Tab.1.bottom/0.25.2560.1346@0.25.2560.1346" timestamp="1637952196842" />
+    <state width="1907" height="406" key="GridCell.Tab.1.center" timestamp="1637956613634">
+      <screen x="0" y="25" width="2560" height="1344" />
     </state>
-    <state width="1907" height="608" key="GridCell.Tab.1.center/0.25.2560.1343@0.25.2560.1343" timestamp="1637813492445" />
-    <state width="1907" height="608" key="GridCell.Tab.1.center/0.25.2560.1344@0.25.2560.1344" timestamp="1637813299868" />
-    <state width="1907" height="608" key="GridCell.Tab.1.left" timestamp="1637813492445">
-      <screen x="0" y="25" width="2560" height="1343" />
+    <state width="1907" height="406" key="GridCell.Tab.1.center/0.25.2560.1343@0.25.2560.1343" timestamp="1637954811765" />
+    <state width="1907" height="406" key="GridCell.Tab.1.center/0.25.2560.1344@0.25.2560.1344" timestamp="1637956613634" />
+    <state width="1907" height="406" key="GridCell.Tab.1.center/0.25.2560.1345@0.25.2560.1345" timestamp="1637953682845" />
+    <state width="1907" height="557" key="GridCell.Tab.1.center/0.25.2560.1346@0.25.2560.1346" timestamp="1637952196842" />
+    <state width="1907" height="406" key="GridCell.Tab.1.left" timestamp="1637956613634">
+      <screen x="0" y="25" width="2560" height="1344" />
     </state>
-    <state width="1907" height="608" key="GridCell.Tab.1.left/0.25.2560.1343@0.25.2560.1343" timestamp="1637813492445" />
-    <state width="1907" height="608" key="GridCell.Tab.1.left/0.25.2560.1344@0.25.2560.1344" timestamp="1637813299868" />
-    <state width="1907" height="608" key="GridCell.Tab.1.right" timestamp="1637813492445">
-      <screen x="0" y="25" width="2560" height="1343" />
+    <state width="1907" height="406" key="GridCell.Tab.1.left/0.25.2560.1343@0.25.2560.1343" timestamp="1637954811765" />
+    <state width="1907" height="406" key="GridCell.Tab.1.left/0.25.2560.1344@0.25.2560.1344" timestamp="1637956613634" />
+    <state width="1907" height="406" key="GridCell.Tab.1.left/0.25.2560.1345@0.25.2560.1345" timestamp="1637953682845" />
+    <state width="1907" height="557" key="GridCell.Tab.1.left/0.25.2560.1346@0.25.2560.1346" timestamp="1637952196841" />
+    <state width="1907" height="406" key="GridCell.Tab.1.right" timestamp="1637956613634">
+      <screen x="0" y="25" width="2560" height="1344" />
     </state>
-    <state width="1907" height="608" key="GridCell.Tab.1.right/0.25.2560.1343@0.25.2560.1343" timestamp="1637813492445" />
-    <state width="1907" height="608" key="GridCell.Tab.1.right/0.25.2560.1344@0.25.2560.1344" timestamp="1637813299868" />
+    <state width="1907" height="406" key="GridCell.Tab.1.right/0.25.2560.1343@0.25.2560.1343" timestamp="1637954811765" />
+    <state width="1907" height="406" key="GridCell.Tab.1.right/0.25.2560.1344@0.25.2560.1344" timestamp="1637956613634" />
+    <state width="1907" height="406" key="GridCell.Tab.1.right/0.25.2560.1345@0.25.2560.1345" timestamp="1637953682845" />
+    <state width="1907" height="557" key="GridCell.Tab.1.right/0.25.2560.1346@0.25.2560.1346" timestamp="1637952196842" />
     <state x="828" y="274" key="SettingsEditor" timestamp="1637706875920">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
     <state x="828" y="274" key="SettingsEditor/0.25.2560.1343@0.25.2560.1343" timestamp="1637706875920" />
-    <state x="940" y="429" key="Vcs.Push.Dialog.v2" timestamp="1637713494484">
+    <state x="940" y="429" key="Vcs.Push.Dialog.v2" timestamp="1637818301042">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
-    <state x="940" y="429" key="Vcs.Push.Dialog.v2/0.25.2560.1343@0.25.2560.1343" timestamp="1637713494484" />
+    <state x="940" y="429" key="Vcs.Push.Dialog.v2/0.25.2560.1343@0.25.2560.1343" timestamp="1637818301042" />
+    <state x="1007" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1637820033365">
+      <screen x="0" y="25" width="2560" height="1343" />
+    </state>
+    <state x="1007" y="331" width="670" height="676" key="search.everywhere.popup/0.25.2560.1343@0.25.2560.1343" timestamp="1637820033365" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/AnswerSheetScanner.java</url>
+          <url>file://$PROJECT_DIR$/src/Sheet/AnswerSheetScanner.java</url>
           <line>151</line>
           <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/QuestionGenerators/QuestionUtils.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="71" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="points.get(0)" />
+        <watch expression="questions" />
+        <watch expression="questions[20].difficulty" />
+        <watch expression="questions[21]" />
       </configuration>
     </watches-manager>
   </component>
