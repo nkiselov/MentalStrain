@@ -1,3 +1,5 @@
+package MultipleChoice;
+
 import QuestionGenerators.QuestionGenerator;
 
 public class QuestionPreset {

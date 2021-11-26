@@ -1,3 +1,5 @@
+package MultipleChoice;
+
 import Sheet.ChoiceSetNameGenerator;
 
 import java.awt.*;

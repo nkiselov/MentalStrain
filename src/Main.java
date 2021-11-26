@@ -1,9 +1,11 @@
+import MultipleChoice.DesignPreset;
+import MultipleChoice.QuestionArrangement;
+import MultipleChoice.QuestionPreset;
+import MultipleChoice.Test;
 import QuestionGenerators.*;
 import Sheet.*;
 
-import javax.imageio.ImageIO;
 import java.awt.*;
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
@@ -45,7 +47,7 @@ public class Main {
 ////            }
 ////            System.out.println((i+1)+":"+add);
 ////        }
-        QuestionPreset qp = new QuestionPreset(new QuestionGenerator[]{new AdditionQuestion(),new SubtractionQuestion(),new MultiplicationQuestion(),new DivisionQuestion()},6,new int[][]{new int[]{10,10,15},new int[]{10,10,15},new int[]{10,10,5},new int[]{10,10,5}},QuestionArrangement.DIFFICULTY);
+        QuestionPreset qp = new QuestionPreset(new QuestionGenerator[]{new AdditionQuestion(),new SubtractionQuestion(),new MultiplicationQuestion(),new DivisionQuestion()},6,new int[][]{new int[]{0,0,5,10,5},new int[]{0,0,5,10,5},new int[]{0,0,5,5},new int[]{0,0,5,5}}, QuestionArrangement.DIFFICULTY);
         DesignPreset dp = new DesignPreset(4,1.5, new ChoiceSetNameGenerator() {
             @Override
             public char[] generateSet(int q) {
@@ -65,6 +67,12 @@ public class Main {
                 return 6;
             }
         },new Color(166, 198, 255));
-        Test.generateTest(qp,dp,new File("Test2F"));
+        Test.generateTest(qp,dp,new File("Test3M"));
+//        MultipleChoice.Test.scoreTest(new File("./TEST2F"), new MultipleChoice.CompositeScorer() {
+//            @Override
+//            public int composite(MultipleChoice.Score s) {
+//                return s.total.correct*5+s.total.unanswered;
+//            }
+//        });
     }
 }

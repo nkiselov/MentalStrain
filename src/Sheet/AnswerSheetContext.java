@@ -43,4 +43,8 @@ public class AnswerSheetContext {
         scn.close();
         return new AnswerSheetContext(questions, choices, n, m, whiteX, whiteY);
     }
+
+    public int getQuestions() {
+        return questions;
+    }
 }

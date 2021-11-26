@@ -18,7 +18,7 @@ public class AnswerSheetScanner {
     };
     private static final int PIXEL_ARTIFACT_TOLERANCE = 500;
     private static final int DARK_LIGHTNESS_CUTOFF = 25;
-    private static final double MARK_ASPECT_RATIO_TOLERANCE = 0.075;
+    private static final double MARK_ASPECT_RATIO_TOLERANCE = 0.25;
     private static final double MIN_MARK_FILL_TOLERANCE = 0.95;
     private static final double MIN_BUBBLE_FILL_TOLERANCE = 0.6;
     private static final int BUBBLE_LIGHTNESS_CUTOFF = 210;
@@ -26,16 +26,20 @@ public class AnswerSheetScanner {
     public static int[] scanSheet(AnswerSheet sheet, File debugDir) throws MalformedScanException {
         int w = sheet.img.getWidth();
         int h = sheet.img.getHeight();
+        BufferedImage colored = new BufferedImage(w, h,
+                BufferedImage.TYPE_4BYTE_ABGR);
+        Graphics2D g = (Graphics2D) colored.getGraphics();
+        g.drawImage(sheet.img, 0, 0, colored.getWidth(), colored.getHeight(), null);
         BufferedImage sh = new BufferedImage(w, h,
                 BufferedImage.TYPE_BYTE_GRAY);
-        Graphics2D gfx = (Graphics2D) sh.getGraphics();
-        gfx.drawImage(sheet.img, 0, 0, sh.getWidth(), sh.getHeight(), null);
-        gfx.dispose();
-//        try {
-//            ImageIO.write(sh, "png", new File("process1.png"));
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+        Graphics2D gfx2 = (Graphics2D) sh.getGraphics();
+        gfx2.drawImage(sheet.img, 0, 0, sh.getWidth(), sh.getHeight(), null);
+        gfx2.dispose();
+        try {
+            ImageIO.write(sh, "png", new File(debugDir.getPath()+"/process1.png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         byte[] pixels = ((DataBufferByte) sh.getRaster().getDataBuffer()).getData();
         byte[] newPixels = new byte[pixels.length];
         boolean[][] px = new boolean[h][w];
@@ -48,15 +52,15 @@ public class AnswerSheetScanner {
                 px[i / w][i % w] = false;
             }
         }
-//        BufferedImage sh2 = new BufferedImage(w, h,
-//                BufferedImage.TYPE_BYTE_GRAY);
-//        byte[] pixels2 = ((DataBufferByte) sh2.getRaster().getDataBuffer()).getData();
-//        System.arraycopy(newPixels, 0, pixels2, 0, newPixels.length);
-//        try {
-//            ImageIO.write(sh2, "png", new File("process2.png"));
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+        BufferedImage sh2 = new BufferedImage(w, h,
+                BufferedImage.TYPE_BYTE_GRAY);
+        byte[] pixels2 = ((DataBufferByte) sh2.getRaster().getDataBuffer()).getData();
+        System.arraycopy(newPixels, 0, pixels2, 0, newPixels.length);
+        try {
+            ImageIO.write(sh2, "png", new File(debugDir.getPath()+"/process2.png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         List<List<Vector2Int>> islands = new ArrayList<>();
         for (int y = 0; y < h; y++) {
             for (int x = 0; x < w; x++) {
@@ -85,7 +89,6 @@ public class AnswerSheetScanner {
                 }
             }
         }
-        Graphics2D g = (Graphics2D) sheet.img.getGraphics();
         g.setColor(Color.blue);
         g.setStroke(new BasicStroke(4));
         List<Rectangle> marks = new ArrayList<>();
@@ -114,11 +117,11 @@ public class AnswerSheetScanner {
                 //System.out.println(r + ":" + fill + ":" + aspect);
             }
         }
-//        try {
-//            ImageIO.write(sheet.img, "png", new File("process3.png"));
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            ImageIO.write(colored, "png", new File(debugDir.getPath()+"/process3.png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         if (marks.size() != sheet.ctx.n * 2) {
             throw new MalformedScanException(marks.size(), sheet.ctx.n);
         }
@@ -173,7 +176,7 @@ public class AnswerSheetScanner {
                     choice = j;
                     chosen += 1;
                     g.drawArc((int) (cx - r / 2), (int) (cy - r / 2), (int) (r), (int) (r), 0, 360);
-                    System.out.println(i + "," + j + ":" + fill);
+                    //System.out.println(i + "," + j + ":" + fill);
                 }
             }
             if (chosen == 0) {
@@ -186,8 +189,9 @@ public class AnswerSheetScanner {
                 responses[i] = -2;
             }
         }
+        g.dispose();
         try {
-            ImageIO.write(sheet.img, "png", new File(debugDir.getPath()+"/debug.png"));
+            ImageIO.write(colored, "png", new File(debugDir.getPath()+"/process4.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }

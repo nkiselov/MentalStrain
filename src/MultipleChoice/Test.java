@@ -1,11 +1,12 @@
+package MultipleChoice;
+
 import QuestionGenerators.Question;
 import QuestionGenerators.QuestionGenerator;
-import Sheet.AnswerSheet;
-import Sheet.AnswerSheetContext;
-import Sheet.AnswerSheetGenerator;
+import Sheet.*;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.*;
 import java.util.*;
 import java.util.List;
@@ -129,6 +130,82 @@ public class Test {
             T a = ar[index];
             ar[index] = ar[i];
             ar[i] = a;
+        }
+    }
+
+    public static void scoreTest(File dir, CompositeScorer sc) throws IOException{
+        File respdir = new File(dir.getPath()+"/responses");
+        File context = new File(dir.getPath()+"/context.txt");
+        AnswerSheetContext ctx = AnswerSheetContext.readFromFile(context);
+        int[] correct = new int[ctx.getQuestions()];
+        String[] type = new String[ctx.getQuestions()];
+        int l = 0;
+        Scanner scn = new Scanner(new FileInputStream(dir.getPath()+"/answers.txt"));
+        while(scn.hasNextLine()){
+            String line = scn.nextLine();
+            correct[l] = Integer.parseInt(line.substring(line.indexOf("(")+1,line.lastIndexOf(")")));
+            type[l] = line.substring(line.indexOf("{")+1,line.lastIndexOf("}"));
+            l+=1;
+        }
+        File[] d1 = respdir.listFiles();
+        if(d1 != null) {
+            main:
+            for (File resp : d1) {
+                if (resp.isDirectory()) {
+                    File[] d2 = resp.listFiles();
+                    boolean enc = false;
+                    if (d2 != null) {
+                        for (File imgf : d2) {
+                            try{
+                                BufferedImage img = ImageIO.read(imgf);
+                                if(img == null){
+                                    continue;
+                                }
+                                if(enc){
+                                    System.out.println("Multiple image files in "+resp.getPath());
+                                    continue main;
+                                }
+                                enc = true;
+                                int[] res = AnswerSheetScanner.scanSheet(new AnswerSheet(img,ctx),resp);
+                                //System.out.println(Arrays.toString(res));
+                                Map<String, CategoryScore> categoryScores = new HashMap<>();
+                                CategoryScore total = new CategoryScore(0,0,0,0,0);
+                                for(int i=0; i<res.length; i++){
+                                    CategoryScore cs;
+                                    if(categoryScores.containsKey(type[i])){
+                                        cs = categoryScores.get(type[i]);
+                                    }else{
+                                        cs = new CategoryScore(0,0,0,0,0);
+                                        categoryScores.put(type[i],cs);
+                                    }
+                                    cs.total++;
+                                    total.total++;
+                                    if(res[i] == -2){
+                                        cs.multiple++;
+                                        total.multiple++;
+                                        System.out.println("Multiple: "+(i+1));
+                                    }else if(res[i] == -1){
+                                        cs.unanswered++;
+                                        total.unanswered++;
+                                        System.out.println("Unanswered: "+(i+1));
+                                    }else if(res[i] == correct[i]){
+                                        cs.correct++;
+                                        total.correct++;
+                                    }else{
+                                        cs.wrong++;
+                                        total.wrong++;
+                                        System.out.println("Wrong: "+(i+1));
+                                    }
+                                }
+                                Score fin = new Score(resp.getName(),categoryScores,total,sc);
+                                Score.saveToFile(fin,new File(resp.getPath()+"/result.txt"));
+                            }catch(IOException | MalformedScanException e){
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
