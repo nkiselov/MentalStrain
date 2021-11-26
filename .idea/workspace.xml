@@ -1,39 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1968df58-3906-4d5d-b0b9-61aff5414b45" name="Default Changelist" comment="Finished test generation">
-      <change afterPath="$PROJECT_DIR$/src/DesignPreset.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuestionArrangement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuestionGenerators/AdditionQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuestionGenerators/MultiplicationQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuestionGenerators/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuestionGenerators/QuestionGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuestionGenerators/QuestionUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuestionGenerators/Tuple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuestionPreset.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sheet/ChoiceSetNameGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sheet/ConstantChoiceSetGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/AnswerSheet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/AnswerSheetContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/AnswerSheetGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/AnswerSheetScanner$Rectangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/AnswerSheetScanner$Vector2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/AnswerSheetScanner$Vector2Int.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/AnswerSheetScanner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/Box.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MentalStrain/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/MalformedScanException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MentalStrain/Rect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnswerSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sheet/AnswerSheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnswerSheetContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sheet/AnswerSheetContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnswerSheetGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sheet/AnswerSheetGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnswerSheetScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sheet/AnswerSheetScanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sheet/Box.java" afterDir="false" />
+    <list default="true" id="1968df58-3906-4d5d-b0b9-61aff5414b45" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MalformedScanException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sheet/MalformedScanException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sheet/Rect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637818295051</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Finished test generation">
+      <created>1637957065735</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1637957065735</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -140,11 +117,11 @@
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
     <state x="1284" y="375" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.2560.1343@0.25.2560.1343" timestamp="1637948554038" />
-    <state x="924" y="182" key="CommitChangelistDialog2" timestamp="1637957049301">
+    <state x="924" y="182" key="CommitChangelistDialog2" timestamp="1637957065581">
       <screen x="0" y="25" width="2560" height="1345" />
     </state>
     <state x="924" y="182" key="CommitChangelistDialog2/0.25.2560.1343@0.25.2560.1343" timestamp="1637818294877" />
-    <state x="924" y="182" key="CommitChangelistDialog2/0.25.2560.1345@0.25.2560.1345" timestamp="1637957049301" />
+    <state x="924" y="182" key="CommitChangelistDialog2/0.25.2560.1345@0.25.2560.1345" timestamp="1637957065581" />
     <state width="1907" height="470" key="GridCell.Tab.0.bottom" timestamp="1637957049353">
       <screen x="0" y="25" width="2560" height="1345" />
     </state>
@@ -205,10 +182,11 @@
       <screen x="0" y="25" width="2560" height="1343" />
     </state>
     <state x="828" y="274" key="SettingsEditor/0.25.2560.1343@0.25.2560.1343" timestamp="1637706875920" />
-    <state x="940" y="429" key="Vcs.Push.Dialog.v2" timestamp="1637818301042">
-      <screen x="0" y="25" width="2560" height="1343" />
+    <state x="940" y="430" key="Vcs.Push.Dialog.v2" timestamp="1637957070142">
+      <screen x="0" y="25" width="2560" height="1345" />
     </state>
     <state x="940" y="429" key="Vcs.Push.Dialog.v2/0.25.2560.1343@0.25.2560.1343" timestamp="1637818301042" />
+    <state x="940" y="430" key="Vcs.Push.Dialog.v2/0.25.2560.1345@0.25.2560.1345" timestamp="1637957070142" />
     <state x="1007" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1637820033365">
       <screen x="0" y="25" width="2560" height="1343" />
     </state>

@@ -65,6 +65,8 @@ public class Test {
                 break;
         }
         dir.mkdir();
+        new File(dir.getPath()+"/responses").mkdir();
+        new File(dir.getPath()+"/responses/response1").mkdir();
         AnswerSheet sh = AnswerSheetGenerator.generateSheet(qs,dp.choices,new Font("Helvetica", Font.PLAIN, 10),dp.sheetColor);
         AnswerSheetContext.writeToFile(sh.ctx,new File(dir.getPath()+"/context.txt"));
         ImageIO.write(sh.img,"png",new File(dir.getPath()+"/sheet.png"));
@@ -106,7 +108,7 @@ public class Test {
         pw.close();
         PrintWriter pw2 = new PrintWriter(new FileWriter(new File(dir.getPath()+"/answers.txt")));
         for(int i = 0; i<correct.length; i++){
-            pw2.println(dp.choices.generateName(i)+". "+dp.choices.generateSet(i)[correct[i]]+" ("+correct[i]+")");
+            pw2.println(dp.choices.generateName(i)+". "+dp.choices.generateSet(i)[correct[i]]+" ("+correct[i]+")"+" {"+questions[i].genName+": "+questions[i].difficulty+"}");
         }
         pw2.flush();
         pw2.close();

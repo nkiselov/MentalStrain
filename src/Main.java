@@ -65,6 +65,6 @@ public class Main {
                 return 6;
             }
         },new Color(166, 198, 255));
-        Test.generateTest(qp,dp,new File("Test2"));
+        Test.generateTest(qp,dp,new File("Test2F"));
     }
 }
